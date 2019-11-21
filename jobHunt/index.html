@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jobHunt</title>
+    <!--external links-->
+    <!-- <link rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"> -->
+    <!--local links-->
+
+    <!-- <link rel="stylesheet" href="hover.css"> -->
+
+    <link rel="stylesheet" href="../localLibraries/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="headerStyle.css">
+    <link rel="stylesheet" href="signupFormStyle.css">
+    <link rel="stylesheet" href="costumizedHover.css">
+
+</head>
+<body>
+        <!-- navigation bar-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+        <a class="navbar-brand" href="#" style="color:#ffffff">
+                <img src="../assets/icons/jobHunt.png" width="50" height="50" alt="brand">
+            jobHunt</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" id="NavBarToggler"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Employers
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Candidates
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"  role="button"  aria-haspopup="true" aria-expanded="false">
+                      Blog
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"  role="button"  aria-haspopup="true" aria-expanded="false">
+                      Job
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"  role="button" aria-haspopup="true" aria-expanded="false">
+                      Page
+                    </a>
+                </li>
+                <li class="link-buttons">
+                    <button type="button" class="btn PostJobsBtn">+ Post Jobs</button>
+                    <button onclick="document.getElementById('id01').style.display='block'" type="button" class="btn btn-link">Sign up</button>
+                    <button type="button" class="btn btn-link">login</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--signup form-->
+    <div id="id01" class="modal">
+      <div class="mx-auto p-1" style="width:480px;">
+
+      <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close fas fa-times-circle" title="Close Modal" ></span> -->
+      <form class="modal-content p-3" action="/action_page.php">
+          <div class="container-fluid ">
+              <h1 class="d-flex justify-content-center">Sign Up</h1>
+              <div class="container-fluid d-flex flex-row justify-content-center pt-3">
+              <button type="submit" class="btn btn-outline-success mr-2">Candidate</button>
+              <button type="submit" class="btn btn-outline-danger ml-2">Employer</button>
+            </div>
+              <hr>
+              <div class="container-fluid d-flex flex-column">
+                <div class=" mb-3 d-flex flex-column">
+                  <input type="text" class="form-control" placeholder="Username" name="username" required>
+                </div>
+                <div class=" mb-3 d-flex flex-column">
+                  <input type="text" class="form-control" placeholder="Email" name="email" required>
+                </div>
+                <div class=" mb-3 d-flex flex-column">
+                  <input type="tel" class="form-control" placeholder="phone number" name="number" required>
+                </div>
+                <div class=" mb-3 d-flex flex-column">
+                  <input type="password" class="form-control" placeholder="Password" name="psw" required>
+                </div>
+                <div class=" mb-3 d-flex flex-column">
+                  <input type="password" class="form-control" placeholder="Repeat Password" name="psw-repeat" required>
+                </div>
+
+                <label>
+                  <input type="checkbox" name="remember"> Remember me
+                </label>
+              </div>
+              <hr>
+              <div class="clearfix d-flex flex-column">
+                <button type="submit" class="signup btn btn-outline-success mb-1">Sign Up</button>
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn btn-outline-secondary mt-1">Cancel</button>
+
+              </div>
+          </div>
+      </form>
+    </div>
+    </div>
+        <!-- heroImage and leading-->
+        <div class=" HeroImage d-flex flex-row align-items-center">
+            <div class="HeroContents  mx-auto">
+              <div class="d-flex flex-column align-items-center mb-3">
+                <h2 style="color:white">The Easiest Way To Get Your Job</h2>
+                <h5 style="color:white">Find Jobs, Employment & Career Opportunies</h5>
+              </div>
+
+                <!--------------------------------------------------------------------------------------------->
+                <div class="searchArea d-flex flex-row">
+                    <div class="jobs input-group mb-3 mr-4">
+                        <input type="text" class="form-control" placeholder="Job title, Company Name or Keyword" style="border-right:0;">
+                        <div class="input-group-append">
+                          <span class="input-group-text far fa-keyboard" style="color:red; background-color: white"></span>
+                        </div>
+                      </div>
+                      <div class="location input-group mb-3 ml-3">
+                        <input type="text" class="form-control" placeholder="New York" style="border-right:0;">
+                        <div class="input-group-append">
+                          <span class="input-group-text fas fa-map-marker-alt" style="color:red; background-color: white"></span>
+                        </div>
+                      </div>
+
+                    <button type="button" class="btn" style="width:60px;background-color:#8b91dd">
+                        <span class="fas fa-search-location" style="font-size:28px;color:#ffffff;"></span>
+                    </button>
+                 </div>
+                 <!--------------------------------------------------------------------------------------------->
+                <div class="d-flex flex-row align-items-center">
+                    <p class="mb-0" style="color:white">or Browse job offers by</p>
+                    <button type="button" class="btn ml-3 category-button">Categories</button>
+                </div>
+
+              </div>
+        </div>
+
+        <!--category section-->
+        <div class="container-fluid d-flex flex-column align-items-center p-4" style="background-color:#fefefefe">
+            <div class="container-fluid d-flex flex-column align-items-center mb-3 mt-3">
+                <h4 class="popularCategories mt-4"><b> Popular categories</b> </h4>
+                <p>37 jobs live - 0 added today</p>
+            </div>
+           <div class="container categories p-2">
+            <div class="grid">
+                <a href="#" class="category border-bottom p-3 d-flex flex-column align-items-center hvr-glow">
+                    <i class="fas fa-bullhorn mb-2"></i>
+                    <h5 style="color:#000000;">Design art & multimedia</h5>
+                    <p>(22 open positions)</p>
+                </a>
+
+                <a href="#" class="category border-left border-right border-bottom p-3 d-flex flex-column align-items-center hvr-glow">
+                    <i class="fas fa-graduation-cap mb-2" ></i>
+                    <h5 style="color:#000000;">Education Training</h5>
+                    <p>(4 open positions)</p>
+                </a>
+                <a href="#" class="category  border-right border-bottom p-3 d-flex flex-column align-items-center hvr-glow">
+                    <i class="fas fa-chart-line mb-2"></i>
+                    <h5 style="color:#000000;">Acounting | Finance</h5>
+                    <p>(22 open positions)</p>
+                </a>
+                <a href="#" class="category  border-bottom p-3 d-flex flex-column align-items-center hvr-glow">
+                    <i class="fas fa-users mb-2" ></i>
+                    <h5 style="color:#000000;">Humain Resources</h5>
+                    <p>(22 open positions)</p>
+                </a>
+                <a href="#" class="category border-right p-3 d-flex flex-column align-items-center hvr-glow">
+                    <i class="fas fa-phone-alt mb-2" ></i>
+                    <h5 style="color:#000000;">Telecomunications</h5>
+                    <p>(22 open positions)</p>
+                </a>
+                <a href="#" class="category border-right p-3 d-flex flex-column align-items-center hvr-glow">
+                    <i class="fas fa-utensils mb-2" ></i>
+                    <h5 style="color:#000000;" >Restaurant | Food Service</h5>
+                    <p>(22 open positions)</p>
+                </a>
+                <a href="#" class="category border-right p-3 d-flex flex-column align-items-center hvr-glow">
+                    <i class="fas fa-building mb-2" ></i>
+                    <h5 style="color:#000000;">Constructions | Facilities</h5>
+                    <p>(22 open positions)</p>
+                </a>
+                <a href="#" class="category p-3 d-flex flex-column align-items-center hvr-glow">
+                    <i class="fas fa-heartbeat  mb-2"></i>
+                    <h5 style="color:#000000;">Health</h5>
+                    <p>(22 open positions)</p>
+                </a>
+              </div>
+           </div>
+           <button class="BrowseAllCategpories btn p-2 mt-3 mb-3"> Browse All categories</button>
+        </div>
+        <!--resume section-->
+        <div class="container-fluid d-flex flex-row align-items-center Resume">
+                <div class="resume-content mx-auto p-2">
+                    <h2>Make a Deference With your Online Resume!</h4>
+                    <h6> Your Resume in minutes with JobHunt resume assistat is ready!</h6>
+                    <button class="btn btn-primary">Create an Account</button>
+                 </div>
+        </div>
+        <!--Featured Jobs-->
+        <div class="container-fluid">
+            <div class="d-flex flex-column align-items-center mx-auto">
+                <h2>Featured Jobs</h4>
+                <h6>Leading Emloyers already using job and talent.</h6>
+            </div>
+            <ul class="list-group list-group-flush d-flex align-items-center">
+                <li class="list-group-item d-flex flex-row container-fluid featuredJobs">
+                    <div class="mr-auto  d-flex flex-row ">
+                        <img class="mr-3" src="../assets/icons/jobHunt.png" alt="Company Brand" style="width: 50px; height: 50px;background-color: #615a5a;">
+                        <p class="ml-3">Web Designer / Developer<br><small style="color: crimson">Massimo Artemisis</small> </p>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <p class="pt-2" style="height: 38px"><i class="fas fa-map-marked-alt mr-3"></i>Sacramento,California</p>
+                        <button class="btn btn-light ml-3" style="height: 35px;"><i class="far fa-heart"></i></button>
+                        <button class="btn btn-outline-primary ml-3 "style="height: 35px;">Full Time</button>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex flex-row container-fluid featuredJobs">
+                    <div class="mr-auto  d-flex flex-row ">
+                        <img class="mr-3" src="../assets/icons/jobHunt.png" alt="Company Brand" style="width: 50px; height: 50px;background-color: #615a5a;">
+                        <p class="ml-3">Web Designer / Developer<br><small style="color: crimson">Massimo Artemisis</small> </p>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <p class="pt-2" style="height: 38px"><i class="fas fa-map-marked-alt mr-3"></i>Sacramento,California</p>
+                        <button class="btn btn-light ml-3" style="height: 35px;"><i class="far fa-heart"></i></button>
+                        <button class="btn btn-outline-primary ml-3 "style="height: 35px;">Full Time</button>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex flex-row container-fluid featuredJobs">
+                    <div class="mr-auto  d-flex flex-row ">
+                        <img class="mr-3" src="../assets/icons/jobHunt.png" alt="Company Brand" style="width: 50px; height: 50px;background-color: #615a5a;">
+                        <p class="ml-3">Web Designer / Developer<br><small style="color: crimson">Massimo Artemisis</small> </p>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <p class="pt-2" style="height: 38px"><i class="fas fa-map-marked-alt mr-3"></i>Sacramento,California</p>
+                        <button class="btn btn-light ml-3" style="height: 35px;"><i class="far fa-heart"></i></button>
+                        <button class="btn btn-outline-primary ml-3 "style="height: 35px;">Full Time</button>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex flex-row container-fluid featuredJobs">
+                    <div class="mr-auto  d-flex flex-row ">
+                        <img class="mr-3" src="../assets/icons/jobHunt.png" alt="Company Brand" style="width: 50px; height: 50px;background-color: #615a5a;">
+                        <p class="ml-3">Web Designer / Developer<br><small style="color: crimson">Massimo Artemisis</small> </p>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <p class="pt-2" style="height: 38px"><i class="fas fa-map-marked-alt mr-3"></i>Sacramento,California</p>
+                        <button class="btn btn-light ml-3" style="height: 35px;"><i class="far fa-heart"></i></button>
+                        <button class="btn btn-outline-primary ml-3 "style="height: 35px;">Full Time</button>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex flex-row container-fluid featuredJobs">
+                    <div class="mr-auto  d-flex flex-row ">
+                        <img class="mr-3" src="../assets/icons/jobHunt.png" alt="Company Brand" style="width: 50px; height: 50px;background-color: #615a5a;">
+                        <p class="ml-3">Web Designer / Developer<br><small style="color: crimson">Massimo Artemisis</small> </p>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <p class="pt-2" style="height: 38px"><i class="fas fa-map-marked-alt mr-3"></i>Sacramento,California</p>
+                        <button class="btn btn-light ml-3" style="height: 35px;"><i class="far fa-heart"></i></button>
+                        <button class="btn btn-outline-primary ml-3 "style="height: 35px;">Full Time</button>
+                    </div>
+                </li>
+                <li class="list-group-item d-flex flex-row container-fluid featuredJobs">
+                    <div class="mr-auto  d-flex flex-row ">
+                        <img class="mr-3" src="../assets/icons/jobHunt.png" alt="Company Brand" style="width: 50px; height: 50px;background-color: #615a5a;">
+                        <p class="ml-3">Web Designer / Developer<br><small style="color: crimson">Massimo Artemisis</small> </p>
+                    </div>
+                    <div class="d-flex flex-row">
+                        <p class="pt-2" style="height: 38px"><i class="fas fa-map-marked-alt mr-3"></i>Sacramento,California</p>
+                        <button class="btn btn-light ml-3" style="height: 35px;"><i class="far fa-heart"></i></button>
+                        <button class="btn btn-outline-primary ml-3 "style="height: 35px;">Full Time</button>
+                    </div>
+                </li>
+              </ul>
+              <button class="btn btn-outline-danger mt-4 mb-4  d-flex mx-auto">load more listing</button>
+        </div>
+
+
+
+        <!--happy candidates section-->
+       <div id="happyCandidates" class="container-fluid carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#happyCandidates" data-slide-to="0" class="active"></li>
+                <li data-target="#happyCandidates" data-slide-to="1"></li>
+                <li data-target="#happyCandidates" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="container d-flex flex-column align-items-center">
+                    <h3 class="pt-2 mt-4" style="color: white;">kind Words From Happy Candidates</h4>
+                    <p class="pt-1 mt-1" style="color: white;">what other people thought about the service provided by jobHunt</p>
+                </div>
+                <div class="carousel-item active ">
+                    <div class="container-fluid">
+                        <div class="d-flex mx-auto flex-row mt-4" style="width: 730px;">
+                            <div class="card mr-3 p-1" style="width: 24rem;">
+                                <img class="card-img-top rounded-circle" src="../assets/images/condidate1.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                            <div class="card  ml-3 p-1" style="width: 24rem;">
+                                <img class="card-img-top rounded-circle" src="../assets/images/condidate2.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
+                                <div class="card-body">
+                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                        <div class="container-fluid">
+                                <div class="d-flex mx-auto flex-row mt-4" style="width: 730px;">
+                                    <div class="card mr-3 p-1" style="width: 24rem;">
+                                        <img class="card-img-top rounded-circle" src="../assets/images/condidate1.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card  ml-3 p-1" style="width: 24rem;">
+                                        <img class="card-img-top rounded-circle" src="../assets/images/condidate2.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+                <div class="carousel-item">
+                        <div class="container-fluid">
+                                <div class="d-flex mx-auto flex-row mt-4" style="width: 730px;">
+                                    <div class="card mr-3 p-1" style="width: 24rem;">
+                                        <img class="card-img-top rounded-circle" src="../assets/images/condidate2.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="card  ml-3 p-1" style="width: 24rem;">
+                                        <img class="card-img-top rounded-circle" src="../assets/images/condidate1.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
+                                        <div class="card-body">
+                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                </div>
+            </div>
+       </div>
+       <!--Companie sections-->
+       <div class="container-fluid companies">
+           <div class="d-flex flex-column mx-auto p-4">
+                <h3 class="p-1 mt-3 mx-auto">Companies We've Helped</h3>
+                <p class="mx-auto">Some of the companies we've helped recruit excellents applicants over the years</p>
+                <div class="d-flex flex-row mx-auto">
+                    <span class="ml-3">
+                        <img src="../assets/icons/jobHunt.png" alt="webtech" width="50" height="50" style="background-color:#e91e63; border-radius: 50%;">
+                    </span>
+                    <span class="ml-3"><img src="../assets/icons/jobHunt.png" alt="INFINIT" width="50" height="50" style="background-color:#e91e63; border-radius: 50%;"></span>
+                    <span class="ml-3"><img src="../assets/icons/jobHunt.png" alt="Coffee" width="50" height="50" style="background-color:#e91e63;border-radius: 50%;"></span>
+                    <span class="ml-3"><img src="../assets/icons/jobHunt.png" alt="OVAL" width="50" height="50" style="background-color:#e91e63;border-radius: 50%;"></span>
+                    <span class="ml-3"><img src="../assets/icons/jobHunt.png" alt="SYMTECH" width="50" height="50" style="background-color:#e91e63;border-radius: 50%;"></span>
+                </div>
+           </div>
+       </div>
+       <!--Career tips section-->
+       <div class="container-fluid careerTips">
+            <div class="d-flex flex-column mx-auto">
+                 <h3 class="p-1 mt-3 mx-auto">Quick Career Tips</h3>
+                 <p class="mx-auto">Found by employers communicate directly with hiring managers and recruiters.</p>
+                 <div class="d-flex mx-auto flex-row mt-4" style="width: 730px;">
+                    <div class="card mb-3" style="width:400px">
+                        <img class="card-img-top ml-0" src="../assets/images/startup-593341_1920.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="width:400px">
+                        <img class="card-img-top ml-0" src="../assets/images/startup-594090_1920.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                    </div>
+                    <div class="card mb-3" style="width:400px">
+                        <img class="card-img-top ml-0" src="../assets/images/startup-594090_1920.jpg" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">John Doe</h4>
+                            <p class="card-text">Some example text.</p>
+                            <a href="#" class="btn btn-primary">See Profile</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!--Get a question-->
+        <div class="container-fluid" style="background-color:#8B91DD;">
+            <div class="d-flex flex-column mx-auto p-4">
+                <h3 class="p-1 mt-3 mx-auto" style="color: white;">get a Question?</h3>
+                <p class="mx-auto" style="color: white;">we're here to help, check out our FAQs, send us an email or call us at 1(800)555-555</p>
+            </div>
+        </div>
+        <div style="height: 1px;"></div>
+        <!--
+            Footer
+        -->
+        <footer class="p-4 footer" style="background:linear-gradient(180deg,#0e2942,#06111d)">
+            <div class="container elements-container d-flex flex-row">
+                <div class="contact-Social d-flex flex-column">
+                    <a  href="#" style="color:#000000; text-decoration: none;">
+                        <img src="../assets/icons/jobHunt.png" width="50" height="50" alt="brand">
+                    jobHunt</a>
+                    <p>collins street West, Victoria 8007, Australia</p>
+                    <p>+1 246-3450695</p>
+                    <a href="info@jobHunt.com">info@jobHunt.com</a>
+                    <div class="social d-flex flex-row">
+                        <span>facebook</span>
+                        <span>twitter</span>
+                        <span>instagram</span>
+                        <span>Pinterest</span>
+                        <span>Google +</span>
+                    </div>
+                </div>
+                    <div class="asked-question d-flex flex-column ml-3" >
+                        <h6>Frequently Asked Questions</h6>
+                        <div class="d-flex flex-row">
+                            <ul class="pl-4" style="list-style:none;">
+                                <li><a href="">Privacy and Security</a></li>
+                                <li><a href="">Terms of service</a></li>
+                                <li><a href="">Communication</a></li>
+                                <li><a href="">Referral Terms</a></li>
+                                <li><a href="">Landing licensens</a></li>
+                                <li><a href="">Desclaimers</a></li>
+                            </ul>
+                            <ul class="pl-4" style="list-style:none;">
+                                <li><a href="">Support</a></li>
+                                <li><a href="">How it Works</a></li>
+                                <li><a href="">For Employers</a></li>
+                                <li><a href="">Underwriting</a></li>
+                                <li><a href="">Contact Us</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="find-jobs ml-3">
+                        <h6>Find Jobs</h6>
+                        <ul class="pl-4" style="list-style:none;">
+                            <li><a href="">US Jobs</a></li>
+                            <li><a href="">Canada Jobs</a></li>
+                            <li><a href="">UK Jobs</a></li>
+                            <li><a href="">Emplois En Frnace</a></li>
+                            <li><a href="">Jobs in Deutchland</a></li>
+                            <li><a href="">Vacatures in Nederland</a></li>
+                        </ul>
+                    </div>
+                    <div class=" d-flex flex-column ml-3">
+                        <button class="btn btn-outline-primary">
+                                <i class="fab fa-google-play"></i>
+
+                          paly Store
+                        </button>
+                        <button class="btn btn-outline-primary">
+                                <i class="fab fa-app-store"></i>
+                          App store
+                        </button>
+                    </div>
+                </div>
+        </footer>
+        <!--external script-->
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+     -->
+    <script src="https://kit.fontawesome.com/fc5f156dc4.js" crossorigin="anonymous"></script>
+    <!--local scripts-->
+
+    <script src="../localLibraries/jquery-3.4.1.min.js"></script>
+    <script src="../localLibraries/popper.min.js"></script>
+    <script src="../localLibraries/bootstrap.min.js"></script>
+    <script src="../localLibraries/tooltip.min.js"></script>
+    <script src="Scripts.js"></script>
+
+
+
+
+</body>
+</html>

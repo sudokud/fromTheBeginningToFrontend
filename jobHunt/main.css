@@ -1,0 +1,199 @@
+/*.navbar-brand{
+
+}*/
+
+/* html{
+    overflow-x: hidden;
+} */
+.navbar-toggler{
+    background-color:rgba(221, 213, 213, 0.589);
+}
+.PostJobsBtn{
+    background-color: rgba(255, 255, 255, 0.61);
+    border-radius: 19px;
+    width: 8em;
+    color:#ffffff;
+
+}
+.PostJobsBtn:hover{
+    background-color: crimson;
+}
+.navbar-nav > .nav-item > .nav-link{
+  color:#ffffff;
+}
+
+.link-buttons > .btn-link{
+  color:#ffffff;
+}
+
+.close{
+  position: relative;
+  color: crimson;
+  left: 20px;
+  top: 20px;
+  z-index: 2;
+  font-size: 40px;
+}
+.close:hover{
+  color: crimson;
+}
+.HeroImage{
+    height: 570px;
+    background-image: linear-gradient(90deg,rgba(40, 40, 210, 0.5), rgba(40, 40, 210, 0.5)), url("../assets/images/heroImage.jpg");
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+.searchArea > .input-group,.btn{
+  box-sizing: border-box;
+}
+.searchArea > .input-group >.form-control {
+  height: 52px;
+}
+.searchArea > .jobs{
+  width: 32.8125vw;
+}
+.searchArea > .location{
+  width: 20.265vw;
+}
+.searchArea > .input-group > div > span{
+  padding-top: 16px;
+  padding-bottom: 2px;
+}
+.searchArea > .btn{
+    height: 52px;
+    width: 52px;
+    margin-left: 16px;
+}
+.category-button{
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+.category-button:hover{
+  border: 1px solid #ffffff;
+  color: #ffffff;
+}
+
+
+
+.Resume{
+    height: 400px;
+    background-image: linear-gradient(90deg,rgba(40, 40, 210, 0.5), rgba(40, 40, 210, 0.5)), url("../assets/images/createanacount.jpg");
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-attachment: fixed;
+}
+
+.Em-brand{
+    background-image: url("../assets/icons/jobHunt.png");
+}
+
+
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 0;
+}
+
+.navbar{
+    transition:500ms ease;
+
+  }
+  .navbar.scrolled{
+    /* background:linear-gradient(90deg,#cacaca,#FFFFFF) */
+  }
+
+
+  .grid > a:link {
+    text-decoration: none;
+
+
+  }
+
+.category>p{
+  color:#e91e63;
+}
+.BrowseAllCategpories{
+  border: 2px solid #e91e63;
+}
+/* .grid > .category > *{
+    color: #000000;
+} */
+
+
+/*
+signup form
+*/
+#id01{
+  background-color:rgba(100, 100, 100, 0.6);
+}
+ #happyCandidates{
+
+    height:380px;
+    background:linear-gradient(rgba(28, 29, 70, 0.5), rgba(28, 29, 70, 0.5)), url("../assets/images/happyBg.jpg");
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    background-attachment: fixed;
+
+
+
+
+ }
+ div > .card > .card-img-top{
+     position: relative;
+     margin-top: -35px;
+     margin-left: 35px;
+ }
+
+ .careerTips{
+     background: url("../assets/images/depositphotos_83348114-stock-illustration-hand-drawn-seamless-pattern-background.jpg");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: top;
+     /* background-attachment: fixed;  */
+    }
+
+
+/* .companies{
+    background:linear-gradient(90deg,#4e499b,#242147)
+} */
+.footer > *{
+    color:white;
+}
+/* mobile device*/
+@media(max-width:712px){
+   .featuredJobs{
+       flex-direction: column !important;
+       align-items: center;
+   }
+}
+/* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+ }
+
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+ }
+
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+ }
+
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {  }
+
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  }
