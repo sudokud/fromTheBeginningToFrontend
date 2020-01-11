@@ -110,9 +110,7 @@
     transition:500ms ease;
 
   }
-  .navbar.scrolled{
-    /* background:linear-gradient(90deg,#cacaca,#FFFFFF) */
-  }
+ 
 
 
   .grid > a:link {
