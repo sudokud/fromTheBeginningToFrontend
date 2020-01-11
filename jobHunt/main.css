@@ -89,7 +89,10 @@
     position: relative;
     background-attachment: fixed;
 }
-
+.resume-createAcount-btn{
+  border: 2px solid white;
+  color: white;
+}
 .Em-brand{
     background-image: url("../assets/icons/jobHunt.png");
 }
