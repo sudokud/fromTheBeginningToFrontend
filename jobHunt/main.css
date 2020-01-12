@@ -97,37 +97,21 @@
     background-image: url("../assets/icons/jobHunt.png");
 }
 
-
-
-
-.grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 0;
-}
-
 .navbar{
     transition:500ms ease;
-
   }
  
-
-
-  .grid > a:link {
+.grid > a:link {
     text-decoration: none;
-
-
   }
 
-.category>p{
+.category > p{
   color:#e91e63;
 }
 .BrowseAllCategpories{
   border: 2px solid #e91e63;
 }
-/* .grid > .category > *{
-    color: #000000;
-} */
+
 
 
 /*
@@ -178,6 +162,7 @@ signup form
        align-items: center;
    }
 }
+
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
   
