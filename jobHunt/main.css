@@ -134,21 +134,7 @@ signup form
 
 
  }
- div > .card > .card-img-top{
-     position: relative;
-     margin-top: -35px;
-     margin-left: 35px;
- }
-
- .careerTips{
-     background: url("../assets/images/depositphotos_83348114-stock-illustration-hand-drawn-seamless-pattern-background.jpg");
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-position: top;
-     /* background-attachment: fixed;  */
-    }
-
-
+ 
 /* .companies{
     background:linear-gradient(90deg,#4e499b,#242147)
 } */
