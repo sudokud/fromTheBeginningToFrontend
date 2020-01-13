@@ -77,8 +77,6 @@
   color: #ffffff;
 }
 
-
-
 .Resume{
     height: 400px;
     background-image: linear-gradient(90deg,rgba(40, 40, 210, 0.5), rgba(40, 40, 210, 0.5)), url("../assets/images/createanacount.jpg");
@@ -112,8 +110,6 @@
   border: 2px solid #e91e63;
 }
 
-
-
 /*
 signup form
 */
@@ -127,12 +123,7 @@ signup form
     background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
-
     background-attachment: fixed;
-
-
-
-
  }
  
 /* .companies{
