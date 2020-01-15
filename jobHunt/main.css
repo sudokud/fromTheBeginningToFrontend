@@ -26,7 +26,7 @@
   color:#ffffff;
 }
 
-.close{
+/* .close{
   position: relative;
   color: crimson;
   left: 20px;
@@ -36,10 +36,10 @@
 }
 .close:hover{
   color: crimson;
-}
+} */
 .HeroImage{
     height: 570px;
-    background-image: linear-gradient(90deg,rgba(40, 40, 210, 0.5), rgba(40, 40, 210, 0.5)), url("../assets/images/heroImage.jpg");
+    background-image: linear-gradient(90deg,rgba(40, 40, 210, 0.39), rgba(40, 40, 210, 0.384)), url("../assets/images/heroImage.jpg");
     /* Position and center the image to scale nicely on all screens */
     background-position: center;
     background-repeat: no-repeat;
@@ -53,21 +53,21 @@
 .searchArea > .input-group >.form-control {
   height: 52px;
 }
-.searchArea > .jobs{
+/* .searchArea > .jobs{
   width: 32.8125vw;
 }
 .searchArea > .location{
   width: 20.265vw;
-}
+} */
 .searchArea > .input-group > div > span{
   padding-top: 16px;
   padding-bottom: 2px;
 }
-.searchArea > .btn{
+/* .searchArea > .btn{
     height: 52px;
     width: 52px;
     margin-left: 16px;
-}
+} */
 .category-button{
   border: 2px solid #ffffff;
   color: #ffffff;
@@ -116,9 +116,7 @@ signup form
 #id01{
   background-color:rgba(100, 100, 100, 0.6);
 }
- #happyCandidates{
-
-    height:380px;
+#happyCandidates{
     background:linear-gradient(rgba(28, 29, 70, 0.5), rgba(28, 29, 70, 0.5)), url("../assets/images/happyBg.jpg");
     background-position:top;
     background-repeat: no-repeat;

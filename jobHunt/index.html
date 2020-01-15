@@ -109,37 +109,45 @@
     </div>
         <!-- heroImage and leading-->
         <div class=" HeroImage d-flex flex-row align-items-center">
-            <div class="HeroContents  mx-auto">
-              <div class="d-flex flex-column align-items-center mb-3">
-                <h2 style="color:white">The Easiest Way To Get Your Job</h2>
-                <h5 style="color:white">Find Jobs, Employment & Career Opportunies</h5>
-              </div>
-
+            <div class="container HeroContents  mx-auto">
+                <div class="d-flex flex-column align-items-center mb-3">
+                    <h2 style="color:white">The Easiest Way To Get Your Job</h2>
+                    <h5 style="color:white">Find Jobs, Employment & Career Opportunies</h5>
+                </div>
                 <!--------------------------------------------------------------------------------------------->
-                <div class="searchArea d-flex flex-row">
-                    <div class="jobs input-group mb-3 mr-4">
-                        <input type="text" class="form-control" placeholder="Job title, Company Name or Keyword" style="border-right:0;">
-                        <div class="input-group-append">
-                          <span class="input-group-text far fa-keyboard" style="color:red; background-color: white"></span>
+                <div class="container-fluid">
+                    <div class="row align-items-center searchArea">
+                        <div class="col-12 col-sm-12 col-md-6 jobs input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Job title, Company Name or Keyword" style="border-right:0;">
+                            <div class="input-group-append">
+                                <span class="input-group-text far fa-keyboard" style="color:red; background-color: white"></span>
+                            </div>
                         </div>
-                      </div>
-                      <div class="location input-group mb-3 ml-3">
-                        <input type="text" class="form-control" placeholder="New York" style="border-right:0;">
-                        <div class="input-group-append">
-                          <span class="input-group-text fas fa-map-marker-alt" style="color:red; background-color: white"></span>
+                        <!-- <div class="w-100"></div> -->
+                        <div class="col-9 col-sm-9 col-md-5 location input-group mb-3">
+                            <input type="text" class="form-control" placeholder="New York" style="border-right:0;">
+                            <div class="input-group-append">
+                                <span class="input-group-text fas fa-map-marker-alt" style="color:red; background-color: white"></span>
+                            </div>
                         </div>
-                      </div>
-
-                    <button type="button" class="btn" style="width:60px;background-color:#8b91dd">
-                        <span class="fas fa-search-location" style="font-size:28px;color:#ffffff;"></span>
-                    </button>
+                        
+                        <div class="col-3 col-sm-3 col-md-1 mb-3 text-center">
+                            <button type="button" class="btn pl-3 pt-2" style="background-color:rgba(206, 52, 86, 0.842);">
+                                <span class="fas fa-search-location" style="font-size:2.1em; color:#ffffff;"></span>
+                            </button>
+                        </div>
+                    </div>
                  </div>
                  <!--------------------------------------------------------------------------------------------->
-                <div class="d-flex flex-row align-items-center">
-                    <p class="mb-0" style="color:white">or Browse job offers by</p>
-                    <button type="button" class="btn ml-3 category-button">Categories</button>
+                 
+                <div class="row ml-2 mt-4 align-items-center">
+                    <div class="col-12">
+                        <div class="d-flex flex-row justify-content-left align-items-center">
+                            <p class="mb-0 mr-3" style="color:white">or Browse job offers by</p>
+                            <button type="button" class="btn category-button">Categories</button>
+                        </div>
+                    </div>
                 </div>
-
               </div>
         </div>
 
@@ -279,65 +287,53 @@
                 <li data-target="#happyCandidates" data-slide-to="1"></li>
                 <li data-target="#happyCandidates" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner">
-                <div class="container d-flex flex-column align-items-center">
-                    <h3 class="pt-2 mt-4" style="color: white;">kind Words From Happy Candidates</h4>
-                    <p class="pt-1 mt-1" style="color: white;">what other people thought about the service provided by jobHunt</p>
+            <div class="container-fluid carousel-inner pb-4">
+                <div class="row text-center">
+                    <div class="col">
+                        <h3 class="pt-2 mt-4" style="color: white;">kind Words From Happy Candidates</h4>
+                        <p class="pt-1 mt-1" style="color: white;">what other people thought about the service provided by jobHunt</p>
+                    </div>
                 </div>
                 <div class="carousel-item active ">
+                    <div class="container">
+                        <div class="row p-4">
+                            <div class=" col-12 col-sm-10 col-md-6 mb-3">
+                                <div class="card p-3 mw-50">
+                                    <img class="card-img-top rounded-circle" src="../assets/images/condidate1.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-10 col-md-6 mb-3">
+                                <div class="card p-3 mw-50">
+                                    <img class="card-img-top rounded-circle" src="../assets/images/condidate2.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="carousel-item">
                     <div class="container-fluid">
                         <div class="d-flex mx-auto flex-row mt-4" style="width: 730px;">
                             <div class="card mr-3 p-1" style="width: 24rem;">
-                                <img class="card-img-top rounded-circle" src="../assets/images/condidate1.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
+                                <img class="card-img-top rounded-circle" src="../assets/images/condidate2.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
                             <div class="card  ml-3 p-1" style="width: 24rem;">
-                                <img class="card-img-top rounded-circle" src="../assets/images/condidate2.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
+                                <img class="card-img-top rounded-circle" src="../assets/images/condidate1.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
                                 <div class="card-body">
                                     <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="carousel-item">
-                        <div class="container-fluid">
-                                <div class="d-flex mx-auto flex-row mt-4" style="width: 730px;">
-                                    <div class="card mr-3 p-1" style="width: 24rem;">
-                                        <img class="card-img-top rounded-circle" src="../assets/images/condidate1.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                    <div class="card  ml-3 p-1" style="width: 24rem;">
-                                        <img class="card-img-top rounded-circle" src="../assets/images/condidate2.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                </div>
-                <div class="carousel-item">
-                        <div class="container-fluid">
-                                <div class="d-flex mx-auto flex-row mt-4" style="width: 730px;">
-                                    <div class="card mr-3 p-1" style="width: 24rem;">
-                                        <img class="card-img-top rounded-circle" src="../assets/images/condidate2.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                    <div class="card  ml-3 p-1" style="width: 24rem;">
-                                        <img class="card-img-top rounded-circle" src="../assets/images/condidate1.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
-                                        <div class="card-body">
-                                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                </div>
+                </div> -->
             </div>
        </div>
        <!--Companie sections-->
@@ -368,28 +364,28 @@
             </div>
             
             <div class="row justify-content-center">
-                <div class="card col-8 col-sm-8 col-md-4 text-center p-0 " >
+                <div class="card col-8 col-sm-6 col-md-3 text-center pl-0 pr-0 m-2">
                     <img  src="../assets/images/startup-593341_1920.jpg" class="card-img-top" alt="CardImage">
                     <div class="card-body">
-                        <h4 class="card-title">carl johnson</h4>
+                        <h4 class="card-title">name 000</h4>
                         <p class="card-text">Some example text.</p>
                         <a href="#" class="btn btn-primary">See Profile</a>
                     </div>
                 </div>
                
-                <div class="card col-8 col-sm-8 col-md-4 text-center p-0 " >
+                <div class="card col-8 col-sm-6 col-md-3 text-center pl-0 pr-0 m-2">
                     <img  src="../assets/images/startup-594090_1920.jpg" class="card-img-top" alt="CardImage" >
                     <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
+                        <h4 class="card-title">name 001</h4>
                         <p class="card-text">Some example text.</p>
                         <a href="#" class="btn btn-primary">See Profile</a>
                     </div>
                 </div>
                
-                <div class="card col-8 col-sm-8 col-md-4 text-center p-0 ">
+                <div class="card col-8 col-sm-6 col-md-3 text-center pl-0 pr-0 m-2">
                     <img  src="../assets/images/startup-594090_1920.jpg" class="card-img-top" alt="CardImage">
                     <div class="card-body">
-                        <h4 class="card-title">John Doe</h4>
+                        <h4 class="card-title">name 002</h4>
                         <p class="card-text">Some example text.</p>
                         <a href="#" class="btn btn-primary">See Profile</a>
                     </div>
@@ -400,7 +396,7 @@
 
 
         <!--Get a question-->
-        <div class="container-fluid" style="background:linear-gradient(90deg, #396afc 0%,#2948ff 100% );">
+        <div class="container-fluid" style = "background-image: url("bootstrapTheme/assets/images/just-waves.png");">
             <div class="d-flex flex-column mx-auto p-4">
                 <h3 class="p-1 mt-3 mx-auto" style="color: white;">get a Question?</h3>
                 <p class="mx-auto" style="color: white;">we're here to help, check out our FAQs, send us an email or call us at 1(800)555-555</p>
