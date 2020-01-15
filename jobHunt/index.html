@@ -20,9 +20,9 @@
 <body>
         <!-- navigation bar-->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-primary">
-        <a class="navbar-brand" href="#" style="color:#ffffff">
-                <img src="../assets/icons/jobHunt.png" width="50" height="50" alt="brand">
-            jobHunt</a>
+        <a class="navbar-brand" href="#">
+            <img class="rounded-circle" src="../assets/icons/JH2.png" width="100" height="50" alt="brand">
+        </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" id="NavBarToggler"></span>
         </button>
@@ -396,10 +396,10 @@
 
 
         <!--Get a question-->
-        <div class="container-fluid" style = "background-image: url("bootstrapTheme/assets/images/just-waves.png");">
+        <div class="container-fluid getQuestion">
             <div class="d-flex flex-column mx-auto p-4">
-                <h3 class="p-1 mt-3 mx-auto" style="color: white;">get a Question?</h3>
-                <p class="mx-auto" style="color: white;">we're here to help, check out our FAQs, send us an email or call us at 1(800)555-555</p>
+                <h3 class="p-1 mt-3 mx-auto" style="color: rgb(255, 255, 255);">get a Question?</h3>
+                <p class="mx-auto" style="color: rgb(255, 255, 255);">we're here to help, check out our FAQs, send us an email or call us at 1(800)555-555</p>
             </div>
         </div>
         <!-- <div style="height: 1px;"></div> -->
@@ -407,27 +407,29 @@
             Footer
         -->
         <footer class="p-4 footer" style="background:#222222;">
-            <div class="container elements-container">
-                <div class="row">
-                    <div class="contact-Social col">
-                        <a  href="#" style="color:#000000; text-decoration: none;">
-                            <img src="../assets/icons/jobHunt.png" width="50" height="50" alt="brand">
-                        jobHunt</a>
+            <div class="container-fluid">
+                <div class="row ">
+                    <!-- col 1 -->
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center">
+                        <a href="#">
+                            <img src="../assets/icons/JH2.png" width="120" height="65" alt="brand">
+                        </a>
                         <p>collins street West, Victoria 8007, Australia</p>
                         <p>+1 246-3450695</p>
                         <a href="info@jobHunt.com">info@jobHunt.com</a>
-                        <div class="social d-flex flex-row">
-                            <span>facebook</span>
-                            <span>twitter</span>
-                            <span>instagram</span>
-                            <span>Pinterest</span>
-                            <span>Google +</span>
+                        <div class="p-1 mt-3 mb-3" >
+                            <a href="" ><i class="fab fa-facebook-f p-1"></i></a>
+                            <a href="" ><i class="fab fa-twitter p-1"></i></a>
+                            <a href="" ><i class="fab fa-instagram p-1"></i></a>
+                            <a href="" ><i class="fab fa-pinterest-p p-1"></i></a>
+                            <a href="" ><i class="fab fa-google-plus-g p-1"></i></a>
                         </div>
                     </div>
-                    <div class="asked-question col ml-3" >
+                    <!--  col 2  -->
+                    <div class="container col-12 col-sm-6 col-md-6 col-lg-3 text-center">
                         <h6>Frequently Asked Questions</h6>
-                        <div class="d-flex flex-row">
-                            <ul class="pl-4" style="list-style:none;">
+                        <div class="row">
+                            <ul class="col-12 pl-4" style="list-style:none;">
                                 <li><a href="">Privacy and Security</a></li>
                                 <li><a href="">Terms of service</a></li>
                                 <li><a href="">Communication</a></li>
@@ -435,7 +437,7 @@
                                 <li><a href="">Landing licensens</a></li>
                                 <li><a href="">Desclaimers</a></li>
                             </ul>
-                            <ul class="pl-4" style="list-style:none;">
+                            <ul class="col-12 pl-4" style="list-style:none;">
                                 <li><a href="">Support</a></li>
                                 <li><a href="">How it Works</a></li>
                                 <li><a href="">For Employers</a></li>
@@ -444,8 +446,9 @@
                             </ul>
                         </div>
                     </div>
-                    <div class="find-jobs ml-3 col">
-                        <h6>Find Jobs</h6>
+                    <!--  col 3  -->
+                    <div class="col-12 col-sm-5 col-md-6 col-lg-3 text-center">
+                        <h6 class="ml-3">Find Jobs</h6>
                         <ul class="pl-4" style="list-style:none;">
                             <li><a href="">US Jobs</a></li>
                             <li><a href="">Canada Jobs</a></li>
@@ -455,16 +458,22 @@
                             <li><a href="">Vacatures in Nederland</a></li>
                         </ul>
                     </div>
-                    <div class="col ml-3">
-                        <button class="btn btn-outline-primary">
-                                <i class="fab fa-google-play"></i>
-
-                            paly Store
-                        </button>
-                        <button class="btn btn-outline-primary">
-                                <i class="fab fa-app-store"></i>
-                            App store
-                        </button>
+                    <!--  col 4  -->
+                    <div class="col-12 col-sm-7 col-md-6 col-lg-3 ">
+                        <div class="d-flex flex-row justify-content-center">
+                            
+                                <button class="mr-1 btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-google-play"></i>
+                                    paly Store
+                                </button>
+                        
+                           
+                                <button class="ml-1 btn btn-outline-primary btn-sm">
+                                    <i class="fab fa-app-store"></i>
+                                    App store
+                                </button>
+                        
+                        </div>
                     </div>
                 </div>
             </div>
