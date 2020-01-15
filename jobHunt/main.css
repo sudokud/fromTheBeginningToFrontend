@@ -12,18 +12,19 @@
     background-color: rgba(255, 255, 255, 0.61);
     border-radius: 19px;
     width: 8em;
-    color:#ffffff;
+    color:#000000;
 
 }
 .PostJobsBtn:hover{
     background-color: crimson;
+    color:#ffffff;
 }
 .navbar-nav > .nav-item > .nav-link{
-  color:#ffffff;
+  color:#000000;
 }
 
 .link-buttons > .btn-link{
-  color:#ffffff;
+  color:#000000;
 }
 
 .HeroImage{
@@ -95,6 +96,7 @@ signup form
 */
 #id01{
   background-color:rgba(100, 100, 100, 0.6);
+  
 }
 
 #happyCandidates{

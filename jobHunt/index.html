@@ -19,9 +19,9 @@
 </head>
 <body>
         <!-- navigation bar-->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-primary">
-        <a class="navbar-brand" href="#">
-            <img class="rounded-circle" src="../assets/icons/JH2.png" width="100" height="50" alt="brand">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light">
+        <a class="navbar-brand p-0" href="#">
+            <img class="rounded-circle" src="../assets/icons/JH.png" width="70" height="70" alt="brand">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon" id="NavBarToggler"></span>
@@ -30,8 +30,8 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">
 
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <li class="nav-item dropdown" >
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#000000">
                       Employers
                     </a>
                 </li>
@@ -64,48 +64,49 @@
         </div>
     </nav>
     <!--signup form-->
-    <div id="id01" class="modal">
-      <div class="mx-auto p-1" style="width:480px;">
+       
+        <div id="id01" class="modal">
+            <div class="pt-2 row justify-content-center">
+            <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close fas fa-times-circle" title="Close Modal" ></span> -->
+            
+            <form class="modal-content p-3" action="/action_page.php">
+                    <div class="container">
+                        <h1 class="d-flex justify-content-center">Sign Up</h1>
+                        <div class="container-fluid d-flex flex-row justify-content-center pt-3">
+                            <button type="submit" class="btn btn-outline-success mr-2">Candidate</button>
+                            <button type="submit" class="btn btn-outline-danger ml-2">Employer</button>
+                        </div>
+                        <hr>
+                        <div class="container-fluid d-flex flex-column">
+                            <div class=" mb-3 d-flex flex-column">
+                            <input type="text" class="form-control" placeholder="Username" name="username" required>
+                            </div>
+                            <div class=" mb-3 d-flex flex-column">
+                            <input type="text" class="form-control" placeholder="Email" name="email" required>
+                            </div>
+                            <div class=" mb-3 d-flex flex-column">
+                            <input type="tel" class="form-control" placeholder="phone number" name="number" required>
+                            </div>
+                            <div class=" mb-3 d-flex flex-column">
+                            <input type="password" class="form-control" placeholder="Password" name="psw" required>
+                            </div>
+                            <div class=" mb-3 d-flex flex-column">
+                            <input type="password" class="form-control" placeholder="Repeat Password" name="psw-repeat" required>
+                            </div>
 
-      <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close fas fa-times-circle" title="Close Modal" ></span> -->
-      <form class="modal-content p-3" action="/action_page.php">
-          <div class="container-fluid ">
-              <h1 class="d-flex justify-content-center">Sign Up</h1>
-              <div class="container-fluid d-flex flex-row justify-content-center pt-3">
-              <button type="submit" class="btn btn-outline-success mr-2">Candidate</button>
-              <button type="submit" class="btn btn-outline-danger ml-2">Employer</button>
-            </div>
-              <hr>
-              <div class="container-fluid d-flex flex-column">
-                <div class=" mb-3 d-flex flex-column">
-                  <input type="text" class="form-control" placeholder="Username" name="username" required>
-                </div>
-                <div class=" mb-3 d-flex flex-column">
-                  <input type="text" class="form-control" placeholder="Email" name="email" required>
-                </div>
-                <div class=" mb-3 d-flex flex-column">
-                  <input type="tel" class="form-control" placeholder="phone number" name="number" required>
-                </div>
-                <div class=" mb-3 d-flex flex-column">
-                  <input type="password" class="form-control" placeholder="Password" name="psw" required>
-                </div>
-                <div class=" mb-3 d-flex flex-column">
-                  <input type="password" class="form-control" placeholder="Repeat Password" name="psw-repeat" required>
-                </div>
+                            <label>
+                            <input type="checkbox" name="remember"> Remember me
+                            </label>
+                        </div>
+                        <hr>
+                        <div class="clearfix d-flex flex-column">
+                            <button type="submit" class="signup btn btn-outline-success mb-1">Sign Up</button>
+                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn btn-outline-secondary mt-1">Cancel</button>
 
-                <label>
-                  <input type="checkbox" name="remember"> Remember me
-                </label>
-              </div>
-              <hr>
-              <div class="clearfix d-flex flex-column">
-                <button type="submit" class="signup btn btn-outline-success mb-1">Sign Up</button>
-                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn btn-outline-secondary mt-1">Cancel</button>
-
-              </div>
-          </div>
-      </form>
-    </div>
+                        </div>
+                    </div>
+                </form>
+        </div>
     </div>
         <!-- heroImage and leading-->
         <div class=" HeroImage d-flex flex-row align-items-center">
@@ -410,9 +411,9 @@
             <div class="container-fluid">
                 <div class="row ">
                     <!-- col 1 -->
-                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center">
+                    <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center p-0 m-0">
                         <a href="#">
-                            <img src="../assets/icons/JH2.png" width="120" height="65" alt="brand">
+                            <img src="../assets/icons/JH.png" width="120" height="120" alt="brand">
                         </a>
                         <p>collins street West, Victoria 8007, Australia</p>
                         <p>+1 246-3450695</p>
