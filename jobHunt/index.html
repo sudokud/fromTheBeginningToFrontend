@@ -34,11 +34,21 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="color:#000000">
                       Employers
                     </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                       Candidates
                     </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"  role="button"  aria-haspopup="true" aria-expanded="false">
@@ -57,57 +67,122 @@
                 </li>
                 <li class="link-buttons">
                     <button type="button" class="btn PostJobsBtn">+ Post Jobs</button>
-                    <button onclick="document.getElementById('id01').style.display='block'" type="button" class="btn btn-link">Sign up</button>
-                    <button type="button" class="btn btn-link">login</button>
+                    <button  type="button" class="btn btn-link" data-toggle="modal" data-target="#signupForm">Sign up</button>
+                    <button  type="button" class="btn btn-link" data-toggle="modal" data-target="#signinForm">login</button>
                 </li>
             </ul>
         </div>
     </nav>
     <!--signup form-->
-       
-        <div id="id01" class="modal">
-            <div class="pt-2 row justify-content-center">
-            <!-- <span onclick="document.getElementById('id01').style.display='none'" class="close fas fa-times-circle" title="Close Modal" ></span> -->
-            
-            <form class="modal-content p-3" action="/action_page.php">
+    <div id="signupForm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form class="p-4">
+                    <div class="form-group">
+                        <div class="row justify-content-center">
+                            <div class="col-3 mr-2">
+                                <button class="btn btn-outline-primary">
+                                   Condidate
+                                </button>
+                            </div>
+                            <div class="col-3 ml-2">
+                                <button class="btn  btn-outline-danger">
+                                   Employer
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="username000">Username</label>
+                        <input type="text" class="form-control" id="username000" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="PasswordInput000">Password</label>
+                        <input type="password" class="form-control" id="PasswordInput000">
+                    </div>
+                    <div class="form-group">
+                        <label for="emailInput000">Email address</label>
+                        <input type="email" class="form-control" id="emailInput000" aria-describedby="emailHelp">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                          <label class="input-group-text bg-light" for="GenderInput000">Select gender</label>
+                        </div>
+                        <select class="custom-select" id="Genderinput000">
+                          <option selected>Choose...</option>
+                          <option value="1">Male</option>
+                          <option value="2">Female</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tel000">Phone number</label>
+                        <input type="tel" class="form-control" id="tel000" aria-describedby="phoneNumber">
+                    </div>
+                    <div class="form-group">
+                        <button class="btn btn-info btn-block">Sign Up</button>
+                    </div>
                     <div class="container">
-                        <h1 class="d-flex justify-content-center">Sign Up</h1>
-                        <div class="container-fluid d-flex flex-row justify-content-center pt-3">
-                            <button type="submit" class="btn btn-outline-success mr-2">Candidate</button>
-                            <button type="submit" class="btn btn-outline-danger ml-2">Employer</button>
+                        <div class="row text-center">
+                            <hr class="col-3">
+                            <p class="col-1 p-0 m-0">Or</p>
+                            <hr class="col-3">
                         </div>
-                        <hr>
-                        <div class="container-fluid d-flex flex-column">
-                            <div class=" mb-3 d-flex flex-column">
-                            <input type="text" class="form-control" placeholder="Username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <div class="row justify-content-center">
+                            <div class="col-2">
+                                <button class="btn btn-outline-primary">
+                                    <i class="fab fa-facebook-square"></i>
+                                </button>
                             </div>
-                            <div class=" mb-3 d-flex flex-column">
-                            <input type="text" class="form-control" placeholder="Email" name="email" required>
+                            <div class="col-2">
+                                <button class="btn  btn-outline-info">
+                                    <i class="fab fa-twitter"></i>
+                                </button>
                             </div>
-                            <div class=" mb-3 d-flex flex-column">
-                            <input type="tel" class="form-control" placeholder="phone number" name="number" required>
-                            </div>
-                            <div class=" mb-3 d-flex flex-column">
-                            <input type="password" class="form-control" placeholder="Password" name="psw" required>
-                            </div>
-                            <div class=" mb-3 d-flex flex-column">
-                            <input type="password" class="form-control" placeholder="Repeat Password" name="psw-repeat" required>
-                            </div>
-
-                            <label>
-                            <input type="checkbox" name="remember"> Remember me
-                            </label>
-                        </div>
-                        <hr>
-                        <div class="clearfix d-flex flex-column">
-                            <button type="submit" class="signup btn btn-outline-success mb-1">Sign Up</button>
-                            <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn btn btn-outline-secondary mt-1">Cancel</button>
-
                         </div>
                     </div>
                 </form>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                  </div>
+             </div>
         </div>
     </div>
+    <!-- sign in form  -->
+    <div id="signinForm" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <form class="p-4">
+                    <div class="form-group">
+                        <label for="username000">Username</label>
+                        <input type="text" class="form-control" id="username000" aria-describedby="emailHelp">
+                    </div>
+                    <div class="form-group">
+                        <label for="PasswordInput000">Password</label>
+                        <input type="password" class="form-control" id="PasswordInput000">
+                    </div>
+                    <div class="form-group">
+                        <div class="row ">
+                            <div class="col-6">
+                                <div class="form-check p-2 ml-3">
+                                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                                    <label class="form-check-label" for="defaultCheck1">
+                                        Remember me
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <button type="button" class="btn btn-link">Forgot Password?</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
         <!-- heroImage and leading-->
         <div class=" HeroImage d-flex flex-row align-items-center">
             <div class="container HeroContents  mx-auto">
@@ -302,7 +377,7 @@
                                 <div class="card p-3 mw-50">
                                     <img class="card-img-top rounded-circle" src="../assets/images/condidate1.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
                                     <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <p class="card-text">Some quick example text to build on the card title <br> And make up the bulk of the card's content.</p>
                                     </div>
                                 </div>
                             </div>
@@ -310,31 +385,57 @@
                                 <div class="card p-3 mw-50">
                                     <img class="card-img-top rounded-circle" src="../assets/images/condidate2.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
                                     <div class="card-body">
-                                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                        <p class="card-text">Some quick example text to build on the card title <br> And make up the bulk of the card's content.</p>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- <div class="carousel-item">
-                    <div class="container-fluid">
-                        <div class="d-flex mx-auto flex-row mt-4" style="width: 730px;">
-                            <div class="card mr-3 p-1" style="width: 24rem;">
-                                <img class="card-img-top rounded-circle" src="../assets/images/condidate2.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row p-4">
+                            <div class=" col-12 col-sm-10 col-md-6 mb-3">
+                                <div class="card p-3 mw-50">
+                                    <img class="card-img-top rounded-circle" src="../assets/images/condidate1.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title <br> And make up the bulk of the card's content.</p>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="card  ml-3 p-1" style="width: 24rem;">
-                                <img class="card-img-top rounded-circle" src="../assets/images/condidate1.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
-                                <div class="card-body">
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <div class="col-12 col-sm-10 col-md-6 mb-3">
+                                <div class="card p-3 mw-50">
+                                    <img class="card-img-top rounded-circle" src="../assets/images/condidate2.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title <br> And make up the bulk of the card's content.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div> -->
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row p-4">
+                            <div class=" col-12 col-sm-10 col-md-6 mb-3">
+                                <div class="card p-3 mw-50">
+                                    <img class="card-img-top rounded-circle" src="../assets/images/condidate1.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title <br> And make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-10 col-md-6 mb-3">
+                                <div class="card p-3 mw-50">
+                                    <img class="card-img-top rounded-circle" src="../assets/images/condidate2.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
+                                    <div class="card-body">
+                                        <p class="card-text">Some quick example text to build on the card title <br> And make up the bulk of the card's content.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
        </div>
        <!--Companie sections-->
@@ -344,12 +445,12 @@
                 <p class="mx-auto">Some of the companies we've helped recruit excellents applicants over the years</p>
                 <div class="d-flex flex-row mx-auto">
                     <span class="ml-3">
-                        <img src="../assets/icons/jobHunt.png" alt="webtech" width="50" height="50" style="background-color:#e91e63; border-radius: 50%;">
+                        <img src="../assets/icons/JH.png" alt="webtech" width="50" height="50" style="background-color:#f1f1f1; border-radius: 50%;">
                     </span>
-                    <span class="ml-3"><img src="../assets/icons/jobHunt.png" alt="INFINIT" width="50" height="50" style="background-color:#e91e63; border-radius: 50%;"></span>
-                    <span class="ml-3"><img src="../assets/icons/jobHunt.png" alt="Coffee" width="50" height="50" style="background-color:#e91e63;border-radius: 50%;"></span>
-                    <span class="ml-3"><img src="../assets/icons/jobHunt.png" alt="OVAL" width="50" height="50" style="background-color:#e91e63;border-radius: 50%;"></span>
-                    <span class="ml-3"><img src="../assets/icons/jobHunt.png" alt="SYMTECH" width="50" height="50" style="background-color:#e91e63;border-radius: 50%;"></span>
+                    <span class="ml-3"><img src="../assets/icons/JH.png" alt="INFINIT" width="50" height="50" style="background-color:#f1f1f1; border-radius: 50%;"></span>
+                    <span class="ml-3"><img src="../assets/icons/JH.png" alt="Coffee" width="50" height="50" style="background-color:#f1f1f1;border-radius: 50%;"></span>
+                    <span class="ml-3"><img src="../assets/icons/JH.png" alt="OVAL" width="50" height="50" style="background-color:#f1f1f1;border-radius: 50%;"></span>
+                    <span class="ml-3"><img src="../assets/icons/JH.png" alt="SYMTECH" width="50" height="50" style="background-color:#f1f1f1;border-radius: 50%;"></span>
                 </div>
            </div>
        </div>
@@ -399,8 +500,8 @@
         <!--Get a question-->
         <div class="container-fluid getQuestion">
             <div class="d-flex flex-column mx-auto p-4">
-                <h3 class="p-1 mt-3 mx-auto" style="color: rgb(255, 255, 255);">get a Question?</h3>
-                <p class="mx-auto" style="color: rgb(255, 255, 255);">we're here to help, check out our FAQs, send us an email or call us at 1(800)555-555</p>
+                <h3 class="p-1 mt-3 mx-auto" style="color: rgb(0, 0, 0);">get a Question?</h3>
+                <p class="mx-auto" style="color: rgb(0, 0, 0);">we're here to help, check out our FAQs, send us an email or call us at 1(800)555-555</p>
             </div>
         </div>
         <!-- <div style="height: 1px;"></div> -->
@@ -413,7 +514,7 @@
                     <!-- col 1 -->
                     <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center p-0 m-0">
                         <a href="#">
-                            <img src="../assets/icons/JH.png" width="120" height="120" alt="brand">
+                            <img src="../assets/icons/JH.png" width="80" height="80" alt="brand">
                         </a>
                         <p>collins street West, Victoria 8007, Australia</p>
                         <p>+1 246-3450695</p>
