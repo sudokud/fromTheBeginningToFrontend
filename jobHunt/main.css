@@ -103,13 +103,20 @@ signup form
     background-size: cover;
     background-attachment: fixed;
  }
-.getQuestion{
-  background:linear-gradient(90deg,rgba(40, 40, 210, 0.212), rgba(40, 40, 210, 0.281)),url("../assets/images/hypnotize.png");
+ .careerTips{
+  background:url("../assets/images/just-waves.png");
+  background-position:top;
+  background-repeat: repeat;
+  background-size: contain;
+  background-attachment: scroll;
+ }
+/* .getQuestion{
+  background:url("../assets/images/hypnotize.png");
   background-position:top;
   background-repeat: repeat;
   background-size: contain;
   background-attachment: fixed;
-}
+} */
  
 
 
@@ -133,7 +140,26 @@ signup form
 .findJobs > ul >li >a:active {
   border:1px solid #ffffff;
 }
+.findJobs > ul >li {
+  padding-top: 8px;
+}
 
+#info000:link{
+  text-decoration: none;
+  padding: 8px;
+  color: rgb(100, 100, 100);
+}
+#info000:visited {
+  color: rgb(100, 100, 100);
+  text-decoration: none;
+}
+#info000:hover {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+#info000:active {
+  border:1px solid #ffffff;
+}
 
 
 
