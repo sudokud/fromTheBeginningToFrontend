@@ -1,15 +1,14 @@
-/*.navbar-brand{
 
-}*/
-
-/* html{
-    overflow-x: hidden;
+/* body >*>*{
+  border: 1px solid red;
 } */
+
+
 .navbar-toggler{
-    background-color:rgba(221, 213, 213, 0.589);
+    background-color:rgb(255, 255, 255);
 }
 .PostJobsBtn{
-    background-color: rgba(255, 255, 255, 0.61);
+    background-color: rgb(255, 255, 255);
     border-radius: 19px;
     width: 8em;
     color:#000000;
@@ -20,11 +19,11 @@
     color:#ffffff;
 }
 .navbar-nav > .nav-item > .nav-link{
-  color:#000000;
+  color:#ffffff;
 }
 
 .link-buttons > .btn-link{
-  color:#000000;
+  color:#ffffff;
 }
 
 .HeroImage{
@@ -97,26 +96,44 @@ signup form
 
 
 #happyCandidates{
+  
     background:linear-gradient(rgba(28, 29, 70, 0.5), rgba(28, 29, 70, 0.5)), url("../assets/images/happyBg.jpg");
     background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
  }
- .careerTips{
-  background:url("../assets/images/just-waves.png");
-  background-position:top;
-  background-repeat: repeat;
-  background-size: contain;
-  background-attachment: scroll;
+ .candidatesAvatar{
+  margin-top: -50px;
+  margin-left: 10px;
+
  }
-/* .getQuestion{
-  background:url("../assets/images/hypnotize.png");
+ .quoteImage{
+  width: 32px;
+  height: 32px;
+  background:url("../assets/icons/quote.png");
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  position: absolute;
+  top: 25px;
+  right: 35px;
+ }
+ .careerTips{
+  height: 39px;
+  background:url("../assets/images/tree_bark.png");
   background-position:top;
   background-repeat: repeat;
-  background-size: contain;
+  background-size: auto;
   background-attachment: fixed;
-} */
+ }
+.getQuestion{
+  background:linear-gradient(90deg,rgba(32, 32, 58, 0.897), rgba(208, 208, 212, 0.5)), url("../assets/images/tree_bark.png");
+  background-position:top;
+  background-repeat: repeat;
+  background-size: auto;
+  background-attachment: fixed;
+}
  
 
 
@@ -146,7 +163,7 @@ signup form
 
 #info000:link{
   text-decoration: none;
-  padding: 8px;
+  padding: 4px;
   color: rgb(100, 100, 100);
 }
 #info000:visited {
