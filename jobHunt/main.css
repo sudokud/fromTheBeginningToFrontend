@@ -24,25 +24,25 @@
   color:#ffffff;
 }
 
-#navbarDropdown:link{
+#navbarDropdown00:link,#navbarDropdown01:link{
   text-decoration: none;
   padding: 8px;
   color: #ffffff;
 }
 
-#navbarDropdown:visited {
+#navbarDropdown00:visited,#navbarDropdown01:visited {
   color: rgb(255, 255, 255);
   text-decoration: none;
 }
   
   
-#navbarDropdown:hover {
+#navbarDropdown00:hover,#navbarDropdown01:hover {
   text-decoration: none;
   color: rgb(255, 255, 255);
 }
   
   
-#navbarDropdown:active {
+#navbarDropdown00:active,#navbarDropdown01:active {
   color: rgb(255, 255, 255);
 }
 
@@ -98,7 +98,6 @@
 .Em-brand{
     background-image: url("../assets/icons/jobHunt.png");
 }
-
 .categories > div > a{
   text-decoration: none;
 }
@@ -108,9 +107,6 @@
 .BrowseAllCategpories{
   border: 2px solid #e91e63;
 }
-
-
-
 #happyCandidates{
   background:linear-gradient(rgba(28, 29, 70, 0.5), rgba(28, 29, 70, 0.5)), url("../assets/images/happyCandidate.jpg");
   background-position:top;
