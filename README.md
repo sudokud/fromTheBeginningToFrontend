@@ -17,3 +17,5 @@ ___
 2.styles
 
 ··1.[hover effect](https://ianlunn.github.io/Hover)
+··2.[images](https://unsplash.com/)
+··3.[logo](https://www.ucraft.com/) i'm using linux so ;) ;) ;)
