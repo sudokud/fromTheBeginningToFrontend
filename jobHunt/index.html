@@ -6,17 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>jobHunt</title>
-    <!--external links-->
+<!--external links-->
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Fonts -->
+    
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Gelasio&display=swap" rel="stylesheet">
+    
 
     <!--local links-->
-   
+    
     <link rel="stylesheet" href="main.css">
-    <link rel="stylesheet" href="headerStyle.css">
-    <link rel="stylesheet" href="signupFormStyle.css">
+    <!-- <link rel="stylesheet" href="signupFormStyle.css"> -->
     <link rel="stylesheet" href="costumizedHover.css">
+    
+    
    
 
 </head>
@@ -38,10 +42,11 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
                     Employers
                     </a>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                    <div class="dropdown-menu " aria-labelledby="dropdownMenuLink">
+                        <a class="dropdown-item" href="#">Browse condidate</a>
+                        <a class="dropdown-item" href="#">Browse condidate With Map</a>
+                        <a class="dropdown-item" href="#">Employer Dashboard</a>
+                        <a class="dropdown-item" href="#">job alert</a>
                     </div>
                 </li>
                 <li class="nav-item dropdown">
@@ -49,12 +54,14 @@
                     Candidates
                     </a>
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                        <a class="dropdown-item" href="#">Browse Jobs</a>
+                        <a class="dropdown-item" href="#">Browse Jobs With Map</a>
+                        <a class="dropdown-item" href="#">Browse Categories</a>
+                        <a class="dropdown-item" href="#">Candidate Dashboard</a>
+                        <a class="dropdown-item" href="#">Job Alert</a>
                     </div>
                 </li>
-                <li class="nav-item hvr-underline-reveal" style="margin-bottom: -7px;">
+                <li class="nav-item hvr-underline-reveal" style="margin-bottom: -7px;max-width: 50px;">
                     <a class="nav-link" href="#"  role="button"  aria-haspopup="true" aria-expanded="false">
                     Blog
                     </a>
@@ -73,7 +80,7 @@
                     <button type="button" class="btn PostJobsBtn">+ Post Jobs</button>
                   
                     <button  type="button" class="btn btn-link hvr-icon-forward" data-toggle="modal" data-target="#signupForm">
-                        <i class="material-icons hvr-icon" style="position: relative;top: 6px; right: 6px;">search</i>Sign up</button>
+                        <i class="material-icons hvr-icon" style="position: relative;top: 6px; right: 6px;">person_outline</i>Sign up</button>
                 
                     <button  type="button" class="btn btn-link hvr-icon-forward" data-toggle="modal" data-target="#signinForm">
                         <i class="material-icons hvr-icon" style="position: relative;top: 6px; right: 6px;">exit_to_app</i>login</button>
@@ -231,8 +238,8 @@
         <div class=" HeroImage d-flex flex-row align-items-center">
             <div class="container HeroContents  mx-auto">
                 <div class="d-flex flex-column align-items-center mb-3 text-center">
-                    <h2 style="color:white">The Easiest Way To Get Your Job</h2>
-                    <h5 style="color:white">Find Jobs, Employment & Career Opportunies</h5>
+                    <h2 style="color:white" >The Easiest Way To Get Your Job</h2>
+                    <h6 style="color:white" >Find Jobs, Employment & Career Opportunies</h6>
                 </div>
                 <!--------------------------------------------------------------------------------------------->
                 <div class="container-fluid">
@@ -240,20 +247,20 @@
                         <div class="col-12 col-sm-12 col-md-6 jobs input-group mb-3">
                             <input type="text" class="form-control" placeholder="Job title, Company Name or Keyword" style="border-right:0;">
                             <div class="input-group-append">
-                                <i class="material-icons input-group-text" style="color:red; background-color: white">keyboard</i>
+                                <i class="material-icons input-group-text" style="color:red; background-color: white;padding-top: 12px;">keyboard</i>
                             </div>
                         </div>
                         <!-- <div class="w-100"></div> -->
                         <div class="col-9 col-sm-9 col-md-5 location input-group mb-3">
                             <input type="text" class="form-control" placeholder="New York" style="border-right:0;">
                             <div class="input-group-append">
-                                <i class="input-group-text material-icons" style="color:red; background-color: white">room</i>
+                                <i class="input-group-text material-icons" style="color:red; background-color: white;padding-top: 12px;">room</i>
                             </div>
                         </div>
                         
-                        <div class="col-3 col-sm-3 col-md-1 mb-3 text-center">
-                            <button type="button" class="btn pl-3 pt-2" style="background-color:rgba(206, 52, 86, 0.842);">
-                                <i class="material-icons" style="font-size:1.7em;color:#ffffff;">my_location</i>
+                        <div class="col-3 col-sm-3 col-md-1 mb-3 text-center hvr-icon-pulse-grow">
+                            <button type="button" class="btn " style="background-color:rgba(206, 52, 86, 0.842);padding-top: 10px;">
+                                <i class="material-icons hvr-icon" style="font-size:1.7em;color:#ffffff;">my_location</i>
                             </button>
                         </div>
                     </div>
@@ -274,7 +281,7 @@
         <!--category section-->
         <div class="container-fluid d-flex flex-column align-items-center p-4" style="background-color:#fefefefe">
             <div class="container-fluid d-flex flex-column align-items-center mb-3 mt-3">
-                <h4 class="popularCategories mt-4 ">Popular categories</h4>
+                <h4 class="popularCategories mt-4 " >Popular categories</h4>
                 <p>37 jobs live - 0 added today</p>
             </div>
           
@@ -308,7 +315,7 @@
                 </a>
                 <a href="#" class="col-sm-6 col-md-3 text-center category p-3 hvr-glow">
                     <i class="material-icons"  style="font-size: 3.5em;">restaurant</i>
-                    <h5 style="color:#000000;" >Restaurant | Food Service</h5>
+                    <h5 style="color:#000000;">Restaurant | Food Service</h5>
                     <p>(22 open positions)</p>
                 </a>
                 <a href="#" class="col-sm-6 col-md-3 text-center category  p-3 hvr-glow">
@@ -328,10 +335,10 @@
         <!--resume section-->
         <div class="container-fluid Resume p-4">
             <div class="row pt-4 text-center">
-                <h2 class="col-12" style="color:#f1f1f1">Make a Deference With your Online Resume!</h4>
+                <h2 class="col-12" style="color:#f1f1f1" >Make a Deference With your Online Resume!</h2>
             </div>
             <div class="row pt-1 text-center">
-                <h6 class="col-12" style="color:#f1f1f1"> Your Resume in minutes with JobHunt resume assistat is ready!</h6>
+                <h6 class="col-12" style="color:#f1f1f1" > Your Resume in minutes with JobHunt resume assistat is ready!</h6>
             </div>
             <div class="row justify-content-center">
                 <button class="btn m-3 resume-createAcount-btn">Create an Account</button>
@@ -340,8 +347,8 @@
         <!--Featured Jobs-->
         <div class="container-fluid">
             <div class="d-flex flex-column align-items-center mx-auto p-3">
-                <h2 style="color:black;">Featured Jobs</h4>
-                <h6 style="color: #000000;">Leading Emloyers already using job and talent.</h6>
+                <h2 style="color:#000000;" >Featured Jobs</h2>
+                <h6 style="color: #000000;" >Leading Emloyers already using job and talent.</h6>
             </div>
             <ul class="list-group list-group-flush d-flex align-items-center">
                 <!--  -->
@@ -351,7 +358,7 @@
                             <a href=""><img class="mr-3 rounded-circle" src="../assets/icons/HC-pub.png" alt="Company Brand" style="width: 50px; height: 50px;"></a>
                         </div>
                         <div class="col-10 col-sm-10 col-md-4">
-                            <p class=" ">Accountant<br><small style="color: crimson">ZZZ Accounting</small> </p>
+                            <p class=" ">Accountant<br><small style="color: crimson">ZZZ Accounting</small></p>
                         </div>
                         <div class="col-7 col-sm-6 col-md-3 justify-content-end">
                             <p class="pt-2" style="height: 42px"><i class="material-icons" style="position: relative;top: 6px; right: 6px;">map</i>Leeds, UK</p>
@@ -394,7 +401,7 @@
                             <a href=""><img class="mr-3 rounded-circle" src="../assets/icons/HC_msn.png" alt="Company Brand" style="width: 50px; height: 50px"></a>
                         </div>
                         <div class="col-10 col-sm-10 col-md-4">
-                            <p class=" ">Computer Network Architect<br><small style="color: crimson">Host Communication</small> </p>
+                            <p>Computer Network Architect<br><small style="color: crimson">Host Communication</small> </p>
                         </div>
                         <div class="col-7 col-sm-6 col-md-3 justify-content-end">
                             <p class="pt-2" style="height: 42px"><i class="material-icons" style="position: relative;top: 6px; right: 6px;">map</i>California, US</p>
@@ -489,7 +496,7 @@
             <div class="container-fluid carousel-inner p-4">
                 <div class="row text-center">
                     <div class="col">
-                        <h3 class="pt-2 mt-4" style="color: white;">kind Words From Happy Candidates</h3>
+                        <h2 class="pt-2 mt-4" style="color: white;" >kind Words From Happy Candidates</h2>
                         <p class="pt-1 mt-1" style="color: white;">what other people thought about the service provided by jobHunt</p>
                     </div>
                 </div>
@@ -497,28 +504,28 @@
                     <div class="container">
                         <div class="row p-4">
                             <div class=" col-12 col-sm-10 col-md-6 mb-3">
-                                <div class="card p-3 mw-50">
+                                <div class="card p-3 mw-50 ">
                                     <img class="card-img-top rounded-circle candidatesAvatar" src="../assets/avatars/user000.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
                                     <div class="card-body pl-0 pr-0">
                                         <div class="d-flex flex-row">
-                                            <h6>Gregg Bishop</h6>
-                                            <small class="ml-3">web designer</small>
+                                            <h6 >beatus candidatum</h6>
+                                            <small class="ml-3">professionis</small>
                                             <i class="quoteImage "></i>
                                         </div>
-                                        <p class="card-text">Some quick example text to build on the card title And make up the bulk of the card's content.</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-10 col-md-6 mb-3">
+                            <div class="col-12 col-sm-10 col-md-6 mb-3 smallMargin">
                                 <div class="card p-3 mw-50">
                                     <img class="card-img-top rounded-circle candidatesAvatar" src="../assets/avatars/user001.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
                                     <div class="card-body pl-0 pr-0">
                                         <div class="d-flex flex-row">
-                                            <h6>Gregg Bishop</h6>
-                                            <small class="ml-3">web designer</small>
-                                            <i class="quoteImage "></i>
+                                            <h6>beatus candidatum</h6>
+                                            <small class="ml-3">professionis</small>
+                                            <i class="quoteImage"></i>
                                         </div>
-                                        <p class="card-text">Some quick example text to build on the card title And make up the bulk of the card's content.</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                 </div>
                             </div>
@@ -533,24 +540,24 @@
                                     <img class="card-img-top rounded-circle candidatesAvatar" src="../assets/avatars/user002.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
                                     <div class="card-body pl-0 pr-0">
                                         <div class="d-flex flex-row">
-                                            <h6>Gregg Bishop</h6>
-                                            <small class="ml-3">web designer</small>
-                                            <i class="quoteImage "></i>
+                                            <h6 >beatus candidatum</h6>
+                                            <small class="ml-3">professionis</small>
+                                            <i class="quoteImage"></i>
                                         </div>
-                                        <p class="card-text">Some quick example text to build on the card title And make up the bulk of the card's content.</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-10 col-md-6 mb-3">
+                            <div class="col-12 col-sm-10 col-md-6 mb-3 smallMargin">
                                 <div class="card p-3 mw-50">
                                     <img class="card-img-top rounded-circle candidatesAvatar" src="../assets/avatars/user003.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
                                     <div class="card-body pl-0 pr-0">
                                         <div class="d-flex flex-row">
-                                            <h6>Gregg Bishop</h6>
-                                            <small class="ml-3">web designer</small>
+                                            <h6 >beatus candidatum</h6>
+                                            <small class="ml-3">professionis</small>
                                             <i class="quoteImage "></i>
                                         </div>
-                                        <p class="card-text">Some quick example text to build on the card title And make up the bulk of the card's content.</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                 </div>
                             </div>
@@ -565,24 +572,24 @@
                                     <img class="card-img-top rounded-circle candidatesAvatar" src="../assets/avatars/user004.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
                                     <div class="card-body pl-0 pr-0">
                                         <div class="d-flex flex-row">
-                                            <h6>Gregg Bishop</h6>
-                                            <small class="ml-3">web designer</small>
+                                            <h6 >beatus candidatum</h6>
+                                            <small class="ml-3">professionis</small>
                                             <i class="quoteImage "></i>
                                         </div>
-                                        <p class="card-text">Some quick example text to build on the card title And make up the bulk of the card's content.</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-12 col-sm-10 col-md-6 mb-3">
+                            <div class="col-12 col-sm-10 col-md-6 mb-3 smallMargin">
                                 <div class="card p-3 mw-50">
                                     <img class="card-img-top rounded-circle candidatesAvatar" src="../assets/avatars/user005.jpg" alt="Card image cap" style="width: 70px; height: 70px;">
                                     <div class="card-body pl-0 pr-0">
                                         <div class="d-flex flex-row">
-                                            <h6>Gregg Bishop</h6>
-                                            <small class="ml-3">web designer</small>
+                                            <h6 >beatus candidatum</h6>
+                                            <small class="ml-3">professionis</small>
                                             <i class="quoteImage "></i>
                                         </div>
-                                        <p class="card-text">Some quick example text to build on the card title And make up the bulk of the card's content.</p>
+                                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                                     </div>
                                 </div>
                             </div>
@@ -594,167 +601,143 @@
        <!--Companie sections-->
        <div class="container companies">
            <div class="d-flex flex-column mx-auto p-4 text-center">
-                <h3 class="p-1 mt-3 mx-auto">Companies We've Helped</h3>
+                <h2 class="p-1 mt-3 mx-auto" >Companies We've Helped</h2>
                 <p class="mx-auto">Some of the companies we've helped recruit excellents applicants over the years</p>
                 <div class="row justify-content-center">
-                    <a href=""><span class="col mr-3"><img src="../assets/icons/HC_tech.png" alt="webtech" width="70" height="70" style="background-color:#f1f1f1; border-radius: 50%;"></span></a>
-                    <a href=""><span class="col mr-3"><img src="../assets/icons/HC_msn.png" alt="INFINIT" width="70" height="70" style="background-color:#f1f1f1; border-radius: 50%;"></span></a>
-                    <a href=""><span class="col mr-3"><img src="../assets/icons/HC_bbc.png" alt="Coffee" width="70" height="70" style="background-color:#f1f1f1;border-radius: 50%;"></span></a>
-                    <a href=""><span class="col mr-3"><img src="../assets/icons/HC-pub.png" alt="OVAL" width="70" height="70" style="background-color:#f1f1f1;border-radius: 50%;"></span></a>
-                    <a href=""><span class="col mr-3"><img src="../assets/icons/webTech.png" alt="SYMTECH" width="70" height="70" style="background-color:#f1f1f1;border-radius: 50%;"></span></a>
+                    <a href=""><span class="col mr-3"><img src="../assets/images/loremIpsum.png" alt="lorem ipsum" width="70" height="70"></span></a>
+                    <a href=""><span class="col mr-3"><img src="../assets/images/loremIpsum.png" alt="lorem ipsum" width="70" height="70" ></span></a>
+                    <a href=""><span class="col mr-3"><img src="../assets/images/loremIpsum.png" alt="lorem ipsum" width="70" height="70" ></span></a>
+                    <a href=""><span class="col mr-3"><img src="../assets/images/loremIpsum.png" alt="lorem ipsum" width="70" height="70" ></span></a>
+                    <a href=""><span class="col mr-3"><img src="../assets/images/loremIpsum.png" alt="lorem ipsum" width="70" height="70"></span></a>
                 </div>
            </div>
        </div>
 
        <div class="container-fluid blueSeparator"></div>
 
+       
        <!--Career tips section-->
             <!-- headers && cards -->
-       <div class="container-fluid pl-0 pr-0">
-            <div class="row mb-1">
+    <section>
+        <div class="container">
+            <div class="row ">
                 <div class="col text-center p-2">
-                    <h3 class="p-1 mt-3">Quick Career Tips</h3>
+                    <h2 class="p-1 mt-3" >Quick Career Tips</h2>
                     <p class=" p-1 mx-auto">Found by employers communicate directly with hiring managers and recruiters.</p>
                 </div>
             </div>
-            <div class="container mb-4">
-                <div class="row justify-content-center">
-                    <div class="card00 card col-6 col-md-4 col-lg-3 mr-lg-4 text-center pl-0 pr-0" style="border: 0; box-shadow: 1px 1px 10px 1px #888888;">
-                        <img  src="../assets/images/startup-593341_1920.jpg" class="card-img-top img-fluid" alt="CardImage">
-                        <div class="card-body "
-                         style="
-                            position: relative;
-                            left:7px;
-                            margin-top:-48px;
-                            border-top-left-radius: 12px;
-                            border-top-right-radius: 12px;
-                            background-color: rgb(255, 255, 255);
-                            width: 95%;">
-                            <p class="card-title ">March 29, 2017 | 0 comments</p>
-                            <p class="card-text">Attract More attention Sale And Profits</p>
-                            <p>a job is regular activity performed in exchange becomig an employee.volunteering</p>
-                            <hr class="mb-2">
-                            <a href="#" class="btn-link">read more</a>
-                            <!-- <i class="material-icons">arrow_right_alt</i> -->
+            <div class="row justify-content-center no-gutters">
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card text-center mx-auto" style="width: 18rem;">
+                        <img  src="../assets/images/career-tips02.jpg" class="card-img-top" alt="CardImage">
+                        <div class="card-body careerTipsCard">
+                            <p class="card-title BPTest">March 29, 2017 | 0 comments</p>
+                            <p class="card-text">Choose Your Occupation Wisely</p>
+                            <p>When you choose an occupation, make sure it's...</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn-link">read more &#8640;</a>
                         </div>
                     </div>
-                    <div class="card01 card col-6 col-md-4 col-lg-3 text-center pl-0 pr-0 mr-lg-4" style="border: 0; box-shadow: 1px 1px 10px 1px #888888;">
-                        <img  src="../assets/images/startup-593341_1920.jpg" class="card-img-top img-fluid" alt="CardImage">
-                        <div class="card-body "
-                         style="
-                            position: relative;
-                            left:7px;
-                            margin-top:-48px;
-                            border-top-left-radius: 12px;
-                            border-top-right-radius: 12px;
-                            background-color: rgb(255, 255, 255);
-                            width: 95%;">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-4">
+                    <div class="card text-center mx-auto" style="width: 18rem;">
+                        <img  src="../assets/images/career-tips01.jpg" class="card-img-top" alt="CardImage">
+                        <div class="card-body careerTipsCard">
                             <p class="card-title ">March 29, 2017 | 0 comments</p>
-                            <p class="card-text">Attract More attention Sale And Profits</p>
-                            <p>a job is regular activity performed in exchange becomig an employee.volunteering</p>
-                            <hr class="mb-2">
-                            <a href="#" class="btn-link">read more</a>
-                            <!-- <i class="material-icons">arrow_right_alt</i> -->
+                            <p class="card-text">Choose Your Occupation Wisely</p>
+                            <p>When you choose an occupation, make sure it's...</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn-link">read more &#8640;</a>
                         </div>
                     </div>
-                    <div class="card02 card col-6 col-md-4  col-lg-3 text-center pl-0 pr-0" style="border: 0; box-shadow: 1px 1px 10px 1px #888888;">
-                        <img  src="../assets/images/startup-593341_1920.jpg" class="card-img-top img-fluid" alt="CardImage">
-                        <div class="card-body "
-                         style="
-                            position: relative;
-                            left:7px;
-                            margin-top:-48px;
-                            border-top-left-radius: 12px;
-                            border-top-right-radius: 12px;
-                            background-color: rgb(255, 255, 255);
-                            width: 95%;">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card text-center mx-auto" style="width: 18rem;">
+                        <img  src="../assets/images/career-tips00.jpg" class="card-img-top" alt="CardImage">
+                        <div class="card-body careerTipsCard">
                             <p class="card-title ">March 29, 2017 | 0 comments</p>
-                            <p class="card-text">Attract More attention Sale And Profits</p>
-                            <p>a job is regular activity performed in exchange becomig an employee.volunteering</p>
-                            <hr class="mb-2">
-                            <a href="#" class="btn-link">read more</a>
-                            <!-- <i class="material-icons">arrow_right_alt</i> -->
+                            <p class="card-text">Choose Your Occupation Wisely</p>
+                            <p>When you choose an occupation, make sure it's...</p>
+                        </div>
+                        <div class="card-footer">
+                            <a href="#" class="btn-link">read more &#8640;</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
     <!-- separator -->
     <div class="container-fluid redSeparator"></div>
 
     <!--Get a question-->
     <div class="container-fluid getQuestion">
         <div class="d-flex flex-column p-4 text-center">
-            <h3 class="p-1 mx-auto" style="color: rgb(41, 11, 11);">get a Question ?</h3>
+            <h2 class="p-1 mx-auto"  style="color: rgb(41, 11, 11);">get a Question ?</h2>
             <p class="mx-auto" style="color: rgb(44, 11, 11);">we're here to help, check out our FAQs, send us an email or call us at 1(800)555-555</p>
         </div>
     </div>
 
     <!-- Footer -->
     <footer class="pt-4 footer" style="background:#222222;">
-        <div class="container pt-4">
+        <div class="container pt-4 pl-lg-0 pr-lg-0">
             <div class="row ">
-              
                 <div class="col-12 col-sm-6 col-md-6 col-lg-3 text-center findJobs">
                     <a href="#">
                         <img src="../assets/icons/real_JH.png" width="70" height="50" alt="brand">
                     </a>
-                    <p class="mt-2" style="color:#ffffff">collins street West, Victoria 8007, Australia</p>
-                    <p style="color:#ffffff">+1 246-3450695</p>
+                    <p class="mt-2" style="color:#ffffff">Colea street south, Fouka 42006, Algiers</p>
+                    <p style="color:#ffffff">+213 793-09011993</p>
                     <a href="info@jobHunt.com" id="info000">info@jobHunt.com</a>
                     <ul class="p-1 mt-3 mb-3 d-flex flex-row justify-content-center" style="list-style:none;">
-                        <li><a href="" ><i class="fab fa-facebook-f p-1"></i></a></li>
-                        <li><a href="" ><i class="fab fa-twitter p-1"></i></a></li>
-                        <li><a href="" ><i class="fab fa-instagram p-1"></i></a></li>
-                        <li><a href="" ><i class="fab fa-pinterest-p p-1"></i></a></li>
-                        <li><a href="" ><i class="fab fa-google-plus-g p-1"></i></a></li>
+                        <li class="facebook"><a href="" ><i class="fab fa-facebook-f p-1"></i></a></li>
+                        <li class="twitter"><a href="" ><i class="fab fa-twitter p-1"></i></a></li>
+                        <li class="instagram"><a href="" ><i class="fab fa-instagram p-1"></i></a></liclass="facebook">
+                        <li class="pinterest"><a href="" ><i class="fab fa-pinterest-p p-1"></i></a></liclass="facebook">
+                        <li class="googlePlus"><a href="" ><i class="fab fa-google-plus-g p-1"></i></a></li class="facebook">
                     </ul>
                 </div>
-               
-                
-             
-                <div class="col-12 col-sm-6 col-md-6 col-lg-3 findJobs">
-                    <h6>Find Jobs</h6>
-                    <ul class="p-2" style="list-style:none;">
-                        <li><a href="#"><i class="material-icons" style="font-size: 16px;position:relative;top: 2px;right: 8px;">open_in_new</i>US Jobs</a></li>
-                        <li><a href="#">—Canada Jobs—</a></li>
-                        <li><a href="#">—UK Jobs—</a></li>
-                        <li><a href="#">—Emplois En Frnace—</a></li>
-                        <li><a href="#">—Jobs in Deutchland—</a></li>
-                        <li><a href="#">—Vacatures in Nederland—</a></li>
+                <div class="col-10 col-sm-6 col-md-6 col-lg-3 findJobs pr-0 mt-md-3">
+                    <h6  style="color: #ffffff;">Find Jobs</h6>
+                    <ul class="pl-2" style="list-style:none;">
+                        <li><a href="#">us Jobs</a></li>
+                        <li><a href="#">canada Jobs</a></li>
+                        <li><a href="#">uK Jobs</a></li>
+                        <li><a href="#">emplois en frnace</a></li>
+                        <li><a href="#">jobs in deutchland</a></li>
+                        <li><a href="#">vacatures in nederland</a></li>
                     </ul>
                 </div>
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4 ml-0 mr-0">
-                    <h6>Frequently Asked Questions</h6>
-                    <div class="row findJobs">
-                        <ul class="col" style="list-style:none;">
-                            <li><a href="">—Privacy and Security</a></li>
-                            <li><a href="">—Terms of service</a></li>
-                            <li><a href="">—Communication</a></li>
-                            <li><a href="">—Referral Terms</a></li>
-                            <li><a href="">—Landing licensens</a></li>
-                            <li><a href="">—Desclaimers</a></li>
+                <div class="col-12 col-sm-8 col-md-6 col-lg-4  mt-md-3 pl-lg-0 pr-lg-0">
+                    <h6  style="color: #ffffff;">Frequently Asked Questions</h6>
+                    <div class="row findJobs mx-auto">
+                        <ul class="col pl-lg-0 pr-lg-0" style="list-style:none;">
+                            <li><a href="">privacy and security</a></li>
+                            <li><a href="">terms of service</a></li>
+                            <li><a href="">communication</a></li>
+                            <li><a href="">referral terms</a></li>
+                            <li><a href="">landing licensens</a></li>
+                            <li><a href="">desclaimers</a></li>
                         </ul>
-                        <ul class="col" style="list-style:none;">
-                            <li><a href="">—Support</a></li>
-                            <li><a href="">—How it Works</a></li>
-                            <li><a href="">—For Employers</a></li>
-                            <li><a href="">—Underwriting</a></li>
-                            <li><a href="">—Contact Us</a></li>     
+                        <ul class="col pl-lg-0 pr-lg-0" style="list-style:none;">
+                            <li><a href="">support</a></li>
+                            <li><a href="">how it works</a></li>
+                            <li><a href="">for employers</a></li>
+                            <li><a href="">underwriting</a></li>
+                            <li><a href="">contact us</a></li>     
                         </ul>
                     </div>
                 </div>
-             
-                <div class="col-12 col-sm-4 col-md-6 col-lg-2">
-                    <div class="d-flex flex-column align-items-center mt-lg-4">
-                        <button class="mb-1 mb-1 btn btn-outline-light">
-                            <i class="fab fa-google-play"></i>
-                            paly Store
-                        </button>
-                        <button class="mt-1 mb-3 btn btn-outline-light">
-                            <i class="fab fa-app-store"></i>
-                            App store
-                        </button>
+                <div class="col-12 col-sm-4 col-md-6 col-lg-2 pl-lg-0 pr-lg-0 ml-lg-0 mr-lg-0">
+                    <div class="d-flex flex-column align-items-center mt-md-6 mt-sm-6 mt-lg-4" id="stores">
+                        <a class="mb-1" href="">
+                            <img src="../assets/icons/googlePlay.svg" alt="play store">
+                        </a>
+                        <a class="mt-1 mb-2" href="">
+                            <img src="../assets/icons/appStore.svg" alt="app store">
+                        </a>
                     </div>
                 </div>
             </div>
@@ -765,9 +748,9 @@
             </div>
         </div>
     </footer>
-
-
-
+<!-- useless ! -->
+    <!-- <i class="material-icons" style="font-size: 16px;position:relative;top: 2px;right: 8px;">open_in_new</i> -->
+<!--  -->
     <!--external script-->
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

@@ -8,14 +8,14 @@
     background-color:rgb(255, 255, 255);
 }
 .PostJobsBtn{
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(214, 126, 126);
     border-radius: 19px;
-    width: 8em;
-    color:#000000;
+    width: 7em;
+    color:#ffffff;
 
 }
 .PostJobsBtn:hover{
-    background-color: crimson;
+    background-color: rgb(209, 60, 85);
     color:#ffffff;
 }
 .navbar-nav > .nav-item > .nav-link{
@@ -117,7 +117,7 @@ signup form
 
 #happyCandidates{
   
-    background:linear-gradient(rgba(28, 29, 70, 0.5), rgba(28, 29, 70, 0.5)), url("../assets/images/happyBg.jpg");
+    background:linear-gradient(rgba(28, 29, 70, 0.5), rgba(28, 29, 70, 0.5)), url("../assets/images/happyCandidate.jpg");
     background-position:top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -148,6 +148,7 @@ signup form
   background-attachment: scroll;
  }
  .redSeparator{
+  margin-top:32px;
   height: 39px;
   background:url("../assets/images/red-separator.png");
   background-position:top;
@@ -155,15 +156,18 @@ signup form
   background-size: contain;
   background-attachment: scroll;
  }
-
-/* .getQuestion{
-  background-color: rgba(18, 15, 37, 0.808);
-  background-position:top;
-  background-repeat: repeat;
-  background-size: auto;
-  background-attachment: fixed;
-} */
- 
+ .careerTipsCard{
+  position: relative;
+  left:7px;
+  margin-top:-48px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+}
+.card{
+border: 0; box-shadow: 1px 1px 10px 1px #888888;
+}
 
 
 .findJobs > ul >li >a:link{
@@ -178,8 +182,9 @@ signup form
   
   
 .findJobs > ul >li >a:hover {
-  text-decoration: underline;
+  
   color: rgb(255, 255, 255);
+  text-transform: capitalize;
 }
   
   
@@ -207,6 +212,45 @@ signup form
   border:1px solid #ffffff;
 }
 
+.testBorder{
+  border: 2px rgb(0, 255, 255) solid;
+}
+
+.facebook:hover .fa-facebook-f{
+  color:	#3b5998;
+}
+.twitter:hover .fa-twitter{
+  color:	#55acee;
+}
+.instagram:hover .fa-instagram{
+  color:#3f729b;
+}
+.pinterest:hover .fa-pinterest-p{
+  color:#bd081c;
+}
+.googlePlus:hover .fa-google-plus-g{
+  color: 	#dc4e41;
+}
+.playStore:hover .fa-google-play{
+  color:  #48b7eb;
+}
+.appStore:hover .fa-app-store{
+  color:  #2196f3;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cherry+Swash&display=swap');
+/* #header2,#header3,#header4,#header5,#header6{
+  font-family: 'Ubuntu', sans-serif;
+} */
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Ubuntu', sans-serif;
+}
+p > *,p,small,#info000{
+  font-family: 'Hind Siliguri', sans-serif;
+}
 
 
 /* mobile device*/
@@ -219,45 +263,57 @@ signup form
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 575.98px) {
-  .card00{
-    margin-bottom: 1em;
+  .smallMargin{
+    margin-top:22px;
   }
-  .card01{
-    margin-bottom: 1em;
-    margin-right: 1em;
-    margin-left: 1em;
+  .BPTest{
+    color:purple;
   }
  }
 
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .card00{
-    margin-bottom: 1em;
+  .smallMargin{
+    margin-top:22px;
   }
-  .card01{
-    margin-bottom: 1em;
-    margin-right: 1em;
-    margin-left: 1em;
+  .BPTest{
+    color:blue;
+  }
+  #stores{
+    position: relative;
+    top:30%;
   }
    }
 
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .card00{
-    margin-left: -2em;
-    margin-right: 1em;
+  .BPTest{
+    color:green;
   }
-  .card01{
-    margin-right: 1em;
-  }
-  .card02{
-
-    margin-right: -2em;
+  #stores{
+    position: relative;
+    top:30%;
   }
  }
 
 /* // Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {  }
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+  .BPTest{
+    color:orange;
+  }
+  #stores{
+    position: relative;
+    top:30%;
+  }
+ }
 
 /* // Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {  }
+@media (min-width: 1200px) { 
+  .BPTest{
+    color:red;
+  }
+  #stores{
+    position: relative;
+    top:30%;
+  }
+ }
