@@ -20,4 +20,4 @@ ___
 
 ··2.[images](https://unsplash.com/)	
 	
-··3.[logo](https://www.ucraft.com/) i'm using linux so.	
+··3.[logo](https://www.ucraft.com/) they are very bad i know.	
