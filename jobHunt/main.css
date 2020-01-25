@@ -1,8 +1,11 @@
 
 /* body >*>*{
-  border: 1px solid red;
+  border: 1px solid red; just for testing, to see the width and the height of body sub sub elements
 } */
 
+@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Cherry+Swash&display=swap');
 
 .navbar-toggler{
     background-color:rgb(255, 255, 255);
@@ -12,7 +15,6 @@
     border-radius: 19px;
     width: 7em;
     color:#ffffff;
-
 }
 .PostJobsBtn:hover{
     background-color: rgb(209, 60, 85);
@@ -21,7 +23,7 @@
 .navbar-nav > .nav-item > .nav-link{
   color:#ffffff;
 }
-/* --------------------------------------------- */
+
 #navbarDropdown:link{
   text-decoration: none;
   padding: 8px;
@@ -43,20 +45,20 @@
 #navbarDropdown:active {
   color: rgb(255, 255, 255);
 }
-/* ---------------------------------------------- */
+
 .link-buttons > .btn-link{
   color:#ffffff;
 }
 
 .HeroImage{
-    height: 570px;
-    background-image: linear-gradient(90deg,rgba(40, 40, 210, 0.39), rgba(40, 40, 210, 0.384)), url("../assets/images/heroImage.jpg");
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
+  height: 570px;
+  background-image: linear-gradient(90deg,rgba(40, 40, 210, 0.39), rgba(40, 40, 210, 0.384)), url("../assets/images/heroImage.jpg");
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
 }
 .searchArea > .input-group,.btn{
   box-sizing: border-box;
@@ -80,13 +82,13 @@
 }
 
 .Resume{
-    background-image: linear-gradient(90deg,rgba(40, 40, 210, 0.5), rgba(40, 40, 210, 0.5)), url("../assets/images/createanacount.jpg");
-    /* Position and center the image to scale nicely on all screens */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    background-attachment: fixed;
+  background-image: linear-gradient(90deg,rgba(40, 40, 210, 0.5), rgba(40, 40, 210, 0.5)), url("../assets/images/createanacount.jpg");
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-attachment: fixed;
 }
 .resume-createAcount-btn{
   border: 2px solid white;
@@ -96,9 +98,6 @@
 .Em-brand{
     background-image: url("../assets/icons/jobHunt.png");
 }
-
-
- 
 
 .categories > div > a{
   text-decoration: none;
@@ -110,25 +109,20 @@
   border: 2px solid #e91e63;
 }
 
-/*
-signup form
-*/
 
 
 #happyCandidates{
-  
-    background:linear-gradient(rgba(28, 29, 70, 0.5), rgba(28, 29, 70, 0.5)), url("../assets/images/happyCandidate.jpg");
-    background-position:top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+  background:linear-gradient(rgba(28, 29, 70, 0.5), rgba(28, 29, 70, 0.5)), url("../assets/images/happyCandidate.jpg");
+  background-position:top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
  }
- .candidatesAvatar{
+.candidatesAvatar{
   margin-top: -50px;
   margin-left: 10px;
-
- }
- .quoteImage{
+}
+.quoteImage{
   width: 32px;
   height: 32px;
   background:url("../assets/icons/quote.png");
@@ -138,16 +132,16 @@ signup form
   position: absolute;
   top: 25px;
   right: 35px;
- }
- .blueSeparator{
+}
+.blueSeparator{
   height: 39px;
   background:url("../assets/images/blue-Separator.png");
   background-position:top;
   background-repeat: repeat;
   background-size: contain;
   background-attachment: scroll;
- }
- .redSeparator{
+}
+.redSeparator{
   margin-top:32px;
   height: 39px;
   background:url("../assets/images/red-separator.png");
@@ -155,8 +149,8 @@ signup form
   background-repeat: repeat;
   background-size: contain;
   background-attachment: scroll;
- }
- .careerTipsCard{
+}
+.careerTipsCard{
   position: relative;
   left:7px;
   margin-top:-48px;
@@ -166,7 +160,7 @@ signup form
   width: 95%;
 }
 .card{
-border: 0; box-shadow: 1px 1px 10px 1px #888888;
+  border: 0; box-shadow: 1px 1px 10px 1px #888888;
 }
 
 
@@ -182,12 +176,9 @@ border: 0; box-shadow: 1px 1px 10px 1px #888888;
   
   
 .findJobs > ul >li >a:hover {
-  
   color: rgb(255, 255, 255);
   text-transform: capitalize;
 }
-  
-  
 .findJobs > ul >li >a:active {
   border:1px solid #ffffff;
 }
@@ -211,11 +202,9 @@ border: 0; box-shadow: 1px 1px 10px 1px #888888;
 #info000:active {
   border:1px solid #ffffff;
 }
-
 .testBorder{
   border: 2px rgb(0, 255, 255) solid;
 }
-
 .facebook:hover .fa-facebook-f{
   color:	#3b5998;
 }
@@ -238,13 +227,6 @@ border: 0; box-shadow: 1px 1px 10px 1px #888888;
   color:  #2196f3;
 }
 
-
-@import url('https://fonts.googleapis.com/css?family=Ubuntu&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Hind+Siliguri&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Cherry+Swash&display=swap');
-/* #header2,#header3,#header4,#header5,#header6{
-  font-family: 'Ubuntu', sans-serif;
-} */
 h1,h2,h3,h4,h5,h6{
   font-family: 'Ubuntu', sans-serif;
 }
@@ -252,68 +234,58 @@ p > *,p,small,#info000{
   font-family: 'Hind Siliguri', sans-serif;
 }
 
-
 /* mobile device*/
+
 @media(max-width:712px){
-   .featuredJobs{
-       flex-direction: column !important;
-       align-items: center;
-   }
+  .featuredJobs{
+    flex-direction: column !important;
+    align-items: center;
+  }
 }
 
 /* // Extra small devices (portrait phones, less than 576px) */
+
 @media (max-width: 575.98px) {
   .smallMargin{
     margin-top:22px;
   }
-  .BPTest{
-    color:purple;
-  }
  }
 
 /* // Small devices (landscape phones, 576px and up) */
+
 @media (min-width: 576px) and (max-width: 767.98px) {
   .smallMargin{
     margin-top:22px;
   }
-  .BPTest{
-    color:blue;
-  }
   #stores{
     position: relative;
     top:30%;
   }
-   }
+}
 
 /* // Medium devices (tablets, 768px and up) */
+
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .BPTest{
-    color:green;
-  }
   #stores{
     position: relative;
     top:30%;
   }
- }
+}
 
 /* // Large devices (desktops, 992px and up) */
+
 @media (min-width: 992px) and (max-width: 1199.98px) { 
-  .BPTest{
-    color:orange;
-  }
   #stores{
     position: relative;
     top:30%;
   }
- }
+}
 
 /* // Extra large devices (large desktops, 1200px and up) */
+
 @media (min-width: 1200px) { 
-  .BPTest{
-    color:red;
-  }
   #stores{
     position: relative;
     top:30%;
   }
- }
+}
