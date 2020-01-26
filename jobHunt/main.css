@@ -23,6 +23,9 @@
 .navbar-nav > .nav-item > .nav-link{
   color:#ffffff;
 }
+.navbar-nav > .nav-item > .nav-link:hover{
+  color: white;
+}
 
 #navbarDropdown00:link,#navbarDropdown01:link{
   text-decoration: none;
@@ -50,6 +53,11 @@
   color:#ffffff;
 }
 
+#dropdown-item-00-1:hover,#dropdown-item-00-2:hover,#dropdown-item-00-3:hover,#dropdown-item-00-4:hover
+,#dropdown-item-01-1:hover,#dropdown-item-01-2:hover,#dropdown-item-01-3:hover,#dropdown-item-01-4:hover
+,#dropdown-item-01-5:hover{
+  background-color:rgba(37, 37, 240, 0.5);
+}
 .HeroImage{
   height: 570px;
   background-image: linear-gradient(90deg,rgba(40, 40, 210, 0.39), rgba(40, 40, 210, 0.384)), url("../assets/images/heroImage.jpg");
